@@ -2,7 +2,6 @@
 
 ## 🚀 Quick start
 
-
 1.  **Setup the repo.**
 
     ```shell
@@ -15,6 +14,7 @@
     # Install dependencies
     npm install
     ```
+
 1.  **Start developing.**
 
     Start up the project.
