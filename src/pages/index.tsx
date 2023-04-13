@@ -7,8 +7,8 @@ import NavBar from "../components/NavBar/navBar";
 
 const IndexPage = () => (
   <React.StrictMode>
-    <App />
     <NavBar />
+    <App />
   </React.StrictMode>
 );
 
