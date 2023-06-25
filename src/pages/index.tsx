@@ -1,15 +1,16 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "../components/App/App";
-import "./index.css";
+import App from "./sponsors";
 import NavBar from "../components/NavBar/navBar";
 
 const IndexPage = () => (
-  <React.StrictMode>
+  <div>
     <NavBar />
-    <App />
-  </React.StrictMode>
+    <header>
+      <h1> Welcome to the index page!</h1>
+    </header>
+  </div>
 );
 
 export default IndexPage;
