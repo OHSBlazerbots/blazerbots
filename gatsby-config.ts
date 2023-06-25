@@ -1,6 +1,10 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  // Because the site is hosted on GitHub Pages as a project page
+  // https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/
+  pathPrefix: "/blazerbots",
+
   siteMetadata: {
     title: `blazerbots`,
     siteUrl: `https://www.yourdomain.tld`,
