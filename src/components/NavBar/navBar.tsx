@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo192 from "../../images/logo192.png";
+import logo192 from "../../images/logo192_black.png";
 import { Link } from "gatsby";
 import { navBackground, linkDefault, linkActive, dropDefault } from './navBar.module.css';
 
