@@ -11,7 +11,7 @@
 }
 
 .dropDefault {
-  color: #FF0066;
+  color: #FF007f;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -30,5 +30,5 @@ a.dropdown-toggle:hover{
 }
 
 .navBackground {
-  background-color: #FF0066;
+  background-color: #FF007f;
 }
