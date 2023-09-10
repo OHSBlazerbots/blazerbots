@@ -1,15 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar/navBar";
+import BasePage from "../components/BasePage/BasePage";
 
-function aboutUsPage() {
-  return (
-    <div>
-        <NavBar />
-        <header>
-            <h1> Welcome to the about us page!</h1>
-        </header>        
-    </div>
-  );
-}
+const page = () => (
+  <BasePage pageName="About Us">Welcome to the about us page!</BasePage>
+);
 
-export default aboutUsPage;
+export default page;

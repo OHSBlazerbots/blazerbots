@@ -1,16 +1,8 @@
 import React from "react";
+import BasePage from "../components/BasePage/BasePage";
 
-import NavBar from "../components/NavBar/navBar";
+const page = () => (
+  <BasePage pageName="Resources">Welcome to the resources page!</BasePage>
+);
 
-function resourcesPage() {
-  return (
-    <div>
-        <NavBar />
-        <header >
-            <h1> Welcome to the resources page!</h1>
-        </header>
-    </div>
-  );
-}
-
-export default resourcesPage;
+export default page;

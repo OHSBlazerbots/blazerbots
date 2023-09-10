@@ -1,15 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar/navBar";
+import BasePage from "../components/BasePage/BasePage";
 
-function historyPage() {
-  return (
-    <div>
-      <NavBar />
-      <header>
-        <h1> Welcome to the history page!</h1>
-      </header>
-    </div>
-  );
-}
+const page = () => (
+  <BasePage pageName="History">Welcome to the history page!</BasePage>
+);
 
-export default historyPage;
+export default page;
