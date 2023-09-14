@@ -10,13 +10,15 @@ interface BasePageProps extends PropsWithChildren {
 }
 
 const BasePage = ({ pageName, children }: BasePageProps) => (
-  <div>
+  <>
     <NavBar />
-    <header className={styleHeader}>
-      <h1>{pageName}</h1>
-    </header>
-    <div className={stylePage}>{children}</div>
-  </div>
+    <div className={stylePage}>
+      <header className={styleHeader}>
+        <h1>{pageName}</h1>
+      </header>
+      <div>{children}</div>
+    </div>
+  </>
 );
 
 export default BasePage;
