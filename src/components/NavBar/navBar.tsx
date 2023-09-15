@@ -30,10 +30,10 @@ function NavBar() {
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
             <NavDropdown title="Sponsors">
               <NavDropdown.Item>
-                <Link to="/spomsors" className={dropDefault} activeClassName={linkActive} > Current Sponsors</Link>
+                <Link to="/sponsors" className={dropDefault} activeClassName={linkActive} > Current Sponsors</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/spomsors" className={dropDefault} activeClassName={linkActive} > How to become a sponsor</Link>
+                <Link to="/sponsors" className={dropDefault} activeClassName={linkActive} > How to become a sponsor</Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="The Team">
@@ -44,7 +44,7 @@ function NavBar() {
                 <Link to="/history" className={dropDefault} activeClassName={linkActive} >Competitions</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/calender" className={dropDefault} activeClassName={linkActive} >Calender</Link>
+                <Link to="/calendar" className={dropDefault} activeClassName={linkActive} >Calendar</Link>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
