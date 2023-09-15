@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
-import { navBackground, linkDefault, linkActive, dropDefault } from './navBar.module.css';
+import { navBackground, linkDefault, linkActive, linkNavBrand, dropDefault } from './navBar.module.css';
 
 const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
@@ -13,16 +13,18 @@ function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="/">
-            <img
-              alt=""
-              src={blackLogo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            BlazerBots 3807
-        </Navbar.Brand>
+        <Link to="/" className={linkNavBrand} >
+          <Navbar.Brand>
+              <img
+                alt=""
+                src={blackLogo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              BlazerBots 3807
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="navbar navbar-light" >

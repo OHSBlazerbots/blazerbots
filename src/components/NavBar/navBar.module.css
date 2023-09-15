@@ -6,6 +6,11 @@
   display: inline-block;
 }
 
+.linkNavBrand {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .linkDefault:hover {
   color: black;
 }
