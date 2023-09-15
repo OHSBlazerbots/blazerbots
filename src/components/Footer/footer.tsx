@@ -15,6 +15,7 @@ function Footer() {
                     Contact Us!
                 </Col>
                 <Col>
+                    {/* This is for the center of the footer, row 1 */}
                 </Col>
                 <Col>
                     Follow Us On Social Media!
@@ -22,13 +23,28 @@ function Footer() {
             </Row>
             <Row>
                 <Col>
-                    <AiOutlineMail />  
+                    <AiOutlineMail />
+                    <span> </span>
                     <a href="mailto:ohsblazerbots@gmail.com" className="text-white" onClick={stopClickPropagation} >ohsblazerbots@gmail.com</a>
                 </Col>
                 <Col>
+                    {/* This is for the center of the footer, row 2 */}
                 </Col>
                 <Col>
-                    <AiFillInstagram /> Instgram
+                    <AiFillInstagram /> 
+                    <span> </span>
+                    <a href="mailto:ohsblazerbots@gmail.com" className="text-white" onClick={stopClickPropagation} >Instgram</a>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    {/* This is for the left of the footer, row 3 */}
+                </Col>
+                <Col>
+                    {/* This is for the center of the footer, row 3 */}
+                </Col>
+                <Col>
+                    {/* This is for the right of the footer, row 3 */}
                 </Col>
             </Row>
         </Container>
