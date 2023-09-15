@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import NavBar from "../NavBar/navBar";
+import Footer from "../Footer/footer";
 import {
   page as stylePage,
   header as styleHeader,
@@ -18,6 +19,7 @@ const BasePage = ({ pageName, children }: BasePageProps) => (
       </header>
       <div>{children}</div>
     </div>
+    <Footer />
   </>
 );
 
