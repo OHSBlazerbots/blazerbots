@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo192 from "../../images/logo192_black.png";
+import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
 import { navBackground, linkDefault, linkActive, dropDefault } from './navBar.module.css';
 
@@ -13,36 +13,45 @@ function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
             <img
               alt=""
-              src={logo192}
+              src={blackLogo}
               width="30"
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            Overland BlazerBots
+            BlazerBots 3807
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="navbar navbar-light" >
             <Link to="/home" className={linkDefault} activeClassName={linkActive} >Home</Link>
-            <Link to="/resources" className={linkDefault} activeClassName={linkActive} >Resources</Link>
-            <NavDropdown title="About Us">
+            <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
+            <NavDropdown title="Sponsors">
               <NavDropdown.Item>
-                <Link to="/about-us" className={dropDefault} activeClassName={linkActive} >About Us</Link>
+                <Link to="/spomsors" className={dropDefault} activeClassName={linkActive} > Current Sponsors</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/history" className={dropDefault} activeClassName={linkActive} >Team History</Link>
+                <Link to="/spomsors" className={dropDefault} activeClassName={linkActive} > How to become a sponsor</Link>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="The Team">
+              <NavDropdown.Item>
+                <Link to="/about-us" className={dropDefault} activeClassName={linkActive} >Meet the team</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/sponsors" className={dropDefault} activeClassName={linkActive} >Sponsors</Link>
+                <Link to="/history" className={dropDefault} activeClassName={linkActive} >Competitions</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/calender" className={dropDefault} activeClassName={linkActive} >Calender</Link>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
                 <a href="https://www.firstinspires.org/robotics/frc" className={dropDefault} onClick={stopClickPropagation} >FIRST</a>
               </NavDropdown.Item>
             </NavDropdown>
+            <Link to="/resources" className={linkDefault} activeClassName={linkActive} >Resources</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
