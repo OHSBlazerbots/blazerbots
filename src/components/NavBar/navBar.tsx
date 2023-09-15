@@ -13,16 +13,18 @@ function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="/">
-            <img
-              alt=""
-              src={blackLogo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            BlazerBots 3807
-        </Navbar.Brand>
+        <Link to="/" className="link-no-style">
+          <Navbar.Brand>
+              <img
+                alt=""
+                src={blackLogo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              BlazerBots 3807
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="navbar navbar-light" >
