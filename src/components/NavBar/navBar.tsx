@@ -13,7 +13,7 @@ function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
       <Container>
-          <Navbar.Brand href="/home">
+        <Navbar.Brand href="/home">
             <img
               alt=""
               src={logo192}
@@ -22,9 +22,7 @@ function NavBar() {
               className="d-inline-block align-top"
             />{' '}
             Overland BlazerBots
-          </Navbar.Brand>
-        </Container>
-      <Container>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="navbar navbar-light" >
