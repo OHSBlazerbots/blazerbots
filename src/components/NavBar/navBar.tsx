@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
-import { navBackground, linkDefault, linkActive, dropDefault } from './navBar.module.css';
+import { navBackground, linkDefault, linkActive, linkNavBrand, dropDefault } from './navBar.module.css';
 
 const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
@@ -13,7 +13,7 @@ function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
       <Container>
-        <Link to="/" className="link-no-style">
+        <Link to="/" className={linkNavBrand} >
           <Navbar.Brand>
               <img
                 alt=""
