@@ -33,7 +33,7 @@ function Footer() {
                 <Col>
                     <AiFillInstagram /> 
                     <span> </span>
-                    <a href="mailto:ohsblazerbots@gmail.com" className="text-white" onClick={stopClickPropagation} >Instgram</a>
+                    <a href="mailto:ohsblazerbots@gmail.com" className="text-white" onClick={stopClickPropagation} >Instagram</a>
                 </Col>
             </Row>
             <Row>
