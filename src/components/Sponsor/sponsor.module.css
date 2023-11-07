@@ -1,4 +1,18 @@
+.logoContainer {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     margin-bottom: 5px;
     padding: 5px;
+}
+
+.card {
+    height: 100%;
+}
+
+.cardBody {
+    flex: 0 1 auto;
 }

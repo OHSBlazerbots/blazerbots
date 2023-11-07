@@ -23,7 +23,7 @@ const pinkSponsors = [
   {name:"Gene Haas Foundation", logo:logo_haas},
   {name:"Cherry Creek Schools Foundation", logo:logo_ccsf},
   {name:"Anglebotics", logo:logo_anglebotics, style: styles.anglebots},
-  {name:"ACE Hardware", logo:logo_ace},
+  {name:"ACE Hardware", logo:logo_ace, description: "Buckley Square"},
   {name:"Fastenal", logo:logo_fastenal},
   {name:"Brothers", logo:logo_brothers},
 ]

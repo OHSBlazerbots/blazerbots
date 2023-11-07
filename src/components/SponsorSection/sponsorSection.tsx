@@ -22,6 +22,7 @@ interface SponsorSectionProps {
           </Col>
         ))}
       </Row>
+      <br/>
     </>
   );
 
