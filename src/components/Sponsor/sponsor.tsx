@@ -1,22 +1,26 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 import {
   logo as logoStyle
 } from "./sponsor.module.css"
 
 interface SponsorProps {
-    name: string;
-    logo: string;
-    style?: React.CSSProperties;
-  }
+  name: string;
+  logo: string;
+  description?: string;
+  style?: React.CSSProperties;
+}
 
-const Sponsor = ({ name, logo, style }: SponsorProps) => (
+const SponsorCard = ({name, logo, description, style}: SponsorProps) => (
   <>
-    <div className={logoStyle} >
-      <img src={logo} width="40%" style={style}>
-      </img>
-      <br/>
-    </div>
+    <Card>
+      <Card.Img variant="top" src={logo} style={style} className={logoStyle} />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{description}</Card.Text>
+      </Card.Body>
+    </Card>
   </>
 );
 
-export default Sponsor;
+export {SponsorCard, SponsorProps};
