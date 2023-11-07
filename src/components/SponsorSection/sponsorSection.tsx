@@ -13,7 +13,7 @@ interface SponsorSectionProps {
   const SponsorSection = ({ title, color, items }: SponsorSectionProps) => (
     <>
       <header style={{color}}>
-        <h2>{title} Tier</h2>
+        <h1>{title} Tier</h1>
       </header>
       <Row xs={1} md={3} className="g-4 justify-content-center">
         {items.map((val, idx) => (
