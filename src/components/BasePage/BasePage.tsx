@@ -2,7 +2,8 @@ import React, { PropsWithChildren } from "react";
 import NavBar from "../NavBar/navBar";
 import Footer from "../Footer/footer";
 import {
-  page as stylePage,
+  pageContainer as stylePageContainer,
+  pageArticle as stylePageArticle,
   header as styleHeader,
 } from "./BasePage.module.css";
 
@@ -11,16 +12,16 @@ interface BasePageProps extends PropsWithChildren {
 }
 
 const BasePage = ({ pageName, children }: BasePageProps) => (
-  <>
+  <div className={stylePageContainer}>
     <NavBar />
-    <div className={stylePage}>
+    <article className={stylePageArticle}>
       <header className={styleHeader}>
         <h1>{pageName}</h1>
       </header>
       <div>{children}</div>
-    </div>
+    </article>
     <Footer />
-  </>
+  </div>
 );
 
 export default BasePage;

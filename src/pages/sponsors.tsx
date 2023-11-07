@@ -1,7 +1,6 @@
 import React from "react";
 import BasePage from "../components/BasePage/BasePage";
 import SponsorSection from "../components/SponsorSection/sponsorSection";
-import Sponsor from "../components/Sponsor/sponsor";
 import logo_ccsd from "../images/logo_ccsd.png";
 import logo_comcast from "../images/logo_comcast.png";
 import logo_haas from "../images/logo_haas.png";
@@ -18,28 +17,27 @@ const styles = {
   }
 };
 
+const pinkSponsors = [
+  {name:"Cherry Creek School District", logo:logo_ccsd},
+  {name:"Comcast", logo:logo_comcast},
+  {name:"Gene Haas Foundation", logo:logo_haas},
+  {name:"Cherry Creek Schools Foundation", logo:logo_ccsf},
+  {name:"Anglebotics", logo:logo_anglebotics, style: styles.anglebots},
+  {name:"ACE Hardware", logo:logo_ace, description: "Buckley Square"},
+  {name:"Fastenal", logo:logo_fastenal},
+  {name:"Brothers", logo:logo_brothers},
+]
+
+const silverSponsors = [
+  {name:"Harbor Freight Tools", logo:logo_harbor_freight},
+]
+
 const page = () => (
   <BasePage pageName="Current Sponsors">
-    <SponsorSection title="Pink" color="#FF007f">
-      <Sponsor name="Cherry Creek School District" logo={logo_ccsd}></Sponsor>
-      <Sponsor name="Comcast" logo={logo_comcast}></Sponsor>
-      <Sponsor name="Gene Haas Foundation" logo={logo_haas}></Sponsor>
-      <Sponsor name="Cherry Creek Schools Foundation" logo={logo_ccsf}></Sponsor>
-      <Sponsor name="Anglebotics" logo={logo_anglebotics} style={styles.anglebots}></Sponsor>
-      <Sponsor name="ACE Hardware" logo={logo_ace}></Sponsor>
-      <Sponsor name="Fastenal" logo={logo_fastenal}></Sponsor>
-      <Sponsor name="Brothers" logo={logo_brothers}></Sponsor>
-    </SponsorSection>
+    <SponsorSection title="Pink" items={pinkSponsors} color="#FF007f" />
     {/* <SponsorSection title="Gold" color="#ffd700"></SponsorSection> */}
-    <SponsorSection title="Silver" color="#c0c0c0"></SponsorSection>
-      <Sponsor name="Harbor Freight Tools" logo={logo_harbor_freight}></Sponsor>
+    <SponsorSection title="Silver" items={silverSponsors} color="#c0c0c0" />
     {/* <SponsorSection title="Bronze" color="#cd7f32"></SponsorSection> */}
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
   </BasePage>
 );
 

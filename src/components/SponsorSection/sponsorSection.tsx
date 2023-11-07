@@ -1,19 +1,28 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import { SponsorCard, SponsorProps } from "../../components/Sponsor/sponsor";
 
 
-interface SponsorSectionProps extends PropsWithChildren {
+interface SponsorSectionProps {
     title: string;
     color: string;
+    items: SponsorProps[];
   }
   
-  const SponsorSection = ({ title, color, children }: SponsorSectionProps) => (
+  const SponsorSection = ({ title, color, items }: SponsorSectionProps) => (
     <>
-      <div>
-        <header style={{color}}>
-          <h2>{title} Tier</h2>
-        </header>
-        <div>{children}</div>
-      </div>
+      <header style={{color}}>
+        <h2>{title} Tier</h2>
+      </header>
+      <Row xs={1} md={3} className="g-4 justify-content-center">
+        {items.map((val, idx) => (
+          <Col key={idx}>
+            <SponsorCard {...val}/>
+          </Col>
+        ))}
+      </Row>
+      <br/>
     </>
   );
 
