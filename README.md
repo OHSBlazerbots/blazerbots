@@ -1,4 +1,6 @@
 # Blazerbots website
+ 
+ The public website is here https://ohsblazerbots.github.io/blazerbots/
 
 ## 🚀 Quick start
 
