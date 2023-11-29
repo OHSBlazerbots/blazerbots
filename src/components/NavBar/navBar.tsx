@@ -12,6 +12,17 @@ import "./navBar-static.css";
 
 const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
+const DropdownItem = NavDropdown.Item; // alias so less typing
+const DropdownItemProps = {
+  as: Link,
+  className: dropDefault,
+  activeClassName: linkActive,
+};
+const ExternalLinkProps = {
+  className: dropDefault,
+  onClick: stopClickPropagation,
+};
+
 function NavBar() {
   return ( 
     <Navbar className={navBackground} expand="lg" variant="dark">
@@ -33,17 +44,15 @@ function NavBar() {
           <Nav className="navbar" >
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
             <NavDropdown title="Sponsors">
-              <NavDropdown.Item as={Link} to="/sponsors" className={dropDefault} activeClassName={linkActive}>Current Sponsors</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/how-to-be-sponsors" className={dropDefault} activeClassName={linkActive}>Become a Sponsor</NavDropdown.Item>
+              <DropdownItem {...DropdownItemProps} to="/sponsors">Current Sponsors</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/how-to-be-sponsors">Become a Sponsor</DropdownItem>
             </NavDropdown>
             <NavDropdown title="The Team">
-              <NavDropdown.Item as={Link} to="/about-us" className={dropDefault} activeClassName={linkActive}>Meet the team</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/history" className={dropDefault} activeClassName={linkActive}>Competitions</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/calendar" className={dropDefault} activeClassName={linkActive}>Calendar</NavDropdown.Item>
+              <DropdownItem {...DropdownItemProps} to="/about-us">Meet the team</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/history">Competitions</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/calendar">Calendar</DropdownItem>
               <NavDropdown.Divider />
-              <NavDropdown.Item>
-                <a href="https://www.firstinspires.org/robotics/frc" className={dropDefault} onClick={stopClickPropagation} >FIRST</a>
-              </NavDropdown.Item>
+              <DropdownItem {...ExternalLinkProps} href="https://www.firstinspires.org/robotics/frc">FIRST</DropdownItem>
             </NavDropdown>
             <Link to="/resources" className={linkDefault} activeClassName={linkActive} >Resources</Link>
           </Nav>
