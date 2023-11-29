@@ -5,11 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BasePage from "../components/BasePage/BasePage";
 
 const title = "Become a Sponsor"
+const sponsorPacketUrl = "https://drive.google.com/file/d/1zJ_RThOwgtSONbEUVSGEswerpjsNMbjc/preview";
 
 const style = {
-  "width": "50%",
-  "margin-left": "auto",
-  "margin-right": "auto",
+  "margin": "auto",
 }
 
 const bronze = {
@@ -32,6 +31,12 @@ const pink = {
   "font-weight": "bold"
 };
 
+const pdfContainerStyle = {
+  "aspect-ratio": "8.5/11",
+  width: "80%",
+  margin: "auto",
+}
+
 const page = () => (
   <BasePage pageName={title}>
     <div style={style}>
@@ -45,7 +50,7 @@ const page = () => (
 
       <p>We look forward to working with you and to seeing your logo on our robot!</p>
     </div>
-    <iframe src="https://drive.google.com/file/d/1zJ_RThOwgtSONbEUVSGEswerpjsNMbjc/preview" width="640" height="480"></iframe>
+    <iframe src={sponsorPacketUrl} style={pdfContainerStyle}/>
   </BasePage>
 );
 
