@@ -33,23 +33,13 @@ function NavBar() {
           <Nav className="navbar" >
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
             <NavDropdown title="Sponsors">
-              <NavDropdown.Item>
-                <Link to="/sponsors" className={dropDefault} activeClassName={linkActive} > Current Sponsors</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/how-to-be-sponsors" className={dropDefault} activeClassName={linkActive} > Become a Sponsor</Link>
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/sponsors" className={dropDefault} activeClassName={linkActive}>Current Sponsors</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/how-to-be-sponsors" className={dropDefault} activeClassName={linkActive}>Become a Sponsor</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="The Team">
-              <NavDropdown.Item>
-                <Link to="/about-us" className={dropDefault} activeClassName={linkActive} >Meet the team</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/history" className={dropDefault} activeClassName={linkActive} >Competitions</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/calendar" className={dropDefault} activeClassName={linkActive} >Calendar</Link>
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us" className={dropDefault} activeClassName={linkActive}>Meet the team</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/history" className={dropDefault} activeClassName={linkActive}>Competitions</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/calendar" className={dropDefault} activeClassName={linkActive}>Calendar</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
                 <a href="https://www.firstinspires.org/robotics/frc" className={dropDefault} onClick={stopClickPropagation} >FIRST</a>
