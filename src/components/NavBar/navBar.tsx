@@ -7,6 +7,9 @@ import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
 import { navBackground, linkDefault, linkActive, linkNavBrand, dropDefault } from './navBar.module.css';
 
+// Not using a CSS module because we want to globally modify class names from Bootstrap
+import "./navBar-static.css";
+
 const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
 function NavBar() {
@@ -27,7 +30,7 @@ function NavBar() {
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="navbar navbar-light" >
+          <Nav className="navbar" >
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
             <NavDropdown title="Sponsors">
               <NavDropdown.Item>
