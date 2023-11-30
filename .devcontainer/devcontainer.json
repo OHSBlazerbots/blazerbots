@@ -6,7 +6,6 @@
     "vscode": {
       "extensions": [
         "MS-vsliveshare.vsliveshare", // Live Share: easier collaboration
-        "streetsidesoftware.code-spell-checker", // spell check warnings
         "esbenp.prettier-vscode", // Prettier Code Formatter
         "vitaliymaz.vscode-svg-previewer" // Preview SVG as images
       ]
