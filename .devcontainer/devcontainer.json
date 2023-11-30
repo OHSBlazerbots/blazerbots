@@ -1,0 +1,15 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
+  "postCreateCommand": "npm start",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-vsliveshare.vsliveshare",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode",
+        "vitaliymaz.vscode-svg-previewer"
+      ]
+    }
+  }
+}
