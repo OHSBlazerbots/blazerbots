@@ -5,10 +5,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "MS-vsliveshare.vsliveshare",
-        "streetsidesoftware.code-spell-checker",
-        "esbenp.prettier-vscode",
-        "vitaliymaz.vscode-svg-previewer"
+        "MS-vsliveshare.vsliveshare", // Live Share: easier collaboration
+        "streetsidesoftware.code-spell-checker", // spell check warnings
+        "esbenp.prettier-vscode", // Prettier Code Formatter
+        "vitaliymaz.vscode-svg-previewer" // Preview SVG as images
       ]
     }
   }
