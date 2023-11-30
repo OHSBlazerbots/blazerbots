@@ -22,7 +22,7 @@
     Start up the project.
 
     ```shell
-    npm run develop
+    npm start
     ```
 
 1.  **Open the code and start customizing!**
