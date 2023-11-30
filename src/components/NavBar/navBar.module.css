@@ -17,17 +17,8 @@
 
 .dropDefault {
   color: #FF007f;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-a.dropdown-toggle {
-  color: #ffffff;
-}
-
-a.dropdown-toggle:hover{
-  color: black;
 }
 
 .linkActive {

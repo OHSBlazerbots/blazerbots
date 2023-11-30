@@ -8,8 +8,8 @@ const title = "Become a Sponsor"
 const sponsorPacketUrl = "https://drive.google.com/file/d/1zJ_RThOwgtSONbEUVSGEswerpjsNMbjc/preview";
 
 const style = {
-  "margin": "auto",
-}
+  margin: "auto",
+};
 
 const makeSponsorTierText = (tier: keyof typeof SponsorTiers) => {
   // Lookup color associated with sponsorship tier
@@ -17,8 +17,8 @@ const makeSponsorTierText = (tier: keyof typeof SponsorTiers) => {
   
   const tierStyle = {
     color: tierColor,
-    "font-weight": "bold"
-  }
+    fontWeight: "bold"
+  };
 
   return (
     <span style={tierStyle}>{tier}</span>
@@ -27,10 +27,10 @@ const makeSponsorTierText = (tier: keyof typeof SponsorTiers) => {
 
 
 const pdfContainerStyle = {
-  "aspect-ratio": "8.5/11",
+  aspectRatio: "8.5/11",
   width: "80%",
   margin: "auto",
-}
+};
 
 const page = () => (
   <BasePage pageName={title}>
