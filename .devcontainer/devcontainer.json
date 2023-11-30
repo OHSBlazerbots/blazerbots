@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
-  "postCreateCommand": "npm start",
+  "postCreateCommand": "npm install && npm start",
   "features": {},
   "customizations": {
     "vscode": {
