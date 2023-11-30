@@ -8,7 +8,10 @@
         "MS-vsliveshare.vsliveshare", // Live Share: easier collaboration
         "esbenp.prettier-vscode", // Prettier Code Formatter
         "vitaliymaz.vscode-svg-previewer" // Preview SVG as images
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
     }
   }
 }
