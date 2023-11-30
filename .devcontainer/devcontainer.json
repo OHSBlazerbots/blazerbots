@@ -1,6 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
-  "postCreateCommand": "npm install && npm start",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "gh codespace ports visibility 8000:public -c $CODESPACE_NAME",
+  "postStartCommand": {
+    "server": "npm start"
+  },
   "features": {},
   "customizations": {
     "vscode": {
@@ -13,5 +17,12 @@
         "terminal.integrated.defaultProfile.linux": "zsh"
       }
     }
-  }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Website",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [8000]
 }
