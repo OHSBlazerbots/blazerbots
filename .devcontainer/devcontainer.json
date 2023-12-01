@@ -1,7 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
-  "postCreateCommand": "npm install",
-  "postAttachCommand": "gh codespace ports visibility 8000:public -c $CODESPACE_NAME",
+  "postCreateCommand": {
+    "install": "npm install",
+    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh"
+  },
   "postStartCommand": {
     "server": "npm start"
   },
