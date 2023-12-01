@@ -2,10 +2,8 @@
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
-  "postCreateCommand": {
-    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh"
-  },
   "postAttachCommand": {
+    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh",
 		"server": "npm start"
 	},
   "features": {
