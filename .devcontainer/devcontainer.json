@@ -3,7 +3,7 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   "postAttachCommand": {
-    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh",
+    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh && exit",
 		"server": "npm start"
 	},
   "features": {
