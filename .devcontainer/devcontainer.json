@@ -17,6 +17,7 @@
       ],
       "settings": {
         "git.autofetch": true,
+        "git.confirmSync": false,
         "terminal.integrated.defaultProfile.linux": "zsh",
         "[jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
