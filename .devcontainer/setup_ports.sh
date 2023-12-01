@@ -14,5 +14,5 @@ gh codespace ports visibility 8000:public -c "$CODESPACE_NAME" || true
 # This works by making the command to set port visibility execute when opening every shell
 # For more context, see link:
 # https://github.com/orgs/community/discussions/4068#discussioncomment-3777635
-echo "gh codespace ports visibility 8000:public -c \$CODESPACE_NAME" >> ~/.bashrc
-echo "gh codespace ports visibility 8000:public -c \$CODESPACE_NAME" >> ~/.zshrc
+echo "gh codespace ports visibility 8000:public -c \$CODESPACE_NAME 2> /dev/null || true" >> ~/.bashrc
+echo "gh codespace ports visibility 8000:public -c \$CODESPACE_NAME 2> /dev/null || true" >> ~/.zshrc
