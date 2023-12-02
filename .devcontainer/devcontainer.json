@@ -1,0 +1,36 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postAttachCommand": {
+    "setupPorts": "/bin/bash .devcontainer/setup_ports.sh && exit",
+    "server": "npm start"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-vsliveshare.vsliveshare", // Live Share: easier collaboration
+        "esbenp.prettier-vscode", // Prettier Code Formatter
+        "vitaliymaz.vscode-svg-previewer" // Preview SVG as images
+      ],
+      "settings": {
+        "git.autofetch": true,
+        "git.confirmSync": false,
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Website",
+      "onAutoForward": "openBrowserOnce"
+    }
+  },
+  "forwardPorts": [8000]
+}
