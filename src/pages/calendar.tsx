@@ -9,7 +9,7 @@ const calendarstyle= {
 
 const page = () => (
   <BasePage pageName="Calendar">
-    <iframe src={calendarUrl} style={calendarstyle} width="100%" frameBorder="0" scrolling="no"></iframe>!</BasePage>
+    <iframe src={calendarUrl} style={calendarstyle} width="100%" frameBorder="0" scrolling="no" /></BasePage>
 );
 
 export default page;
