@@ -54,7 +54,7 @@ const AboutUsCard = (
       <Card.Title>About Us</Card.Title>
       The BlazerBots, based at Overland High School in Aurora, Colorado are a
       high school team that provides a diverse, inclusive and fun learning
-      environment for all of its members. The BlazerBots participates in FIRST
+      environment for all of its members. The BlazerBots participate in FIRST
       Robotics Competition (FRC), and started competing at the Colorado Regional
       in 2011!
     </Card.Body>
