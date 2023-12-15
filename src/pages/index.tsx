@@ -80,7 +80,7 @@ const WhatIsFIRSTCard = (
 );
 
 const page = () => (
-  <BasePage pageName="">
+  <BasePage>
     <Carousel style={carouselStyle}>
       {carouselCards.map(makeCarouselItem)}
     </Carousel>
