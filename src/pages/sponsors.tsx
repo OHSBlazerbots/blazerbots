@@ -1,6 +1,8 @@
 import React from "react";
 import BasePage from "../components/BasePage/BasePage";
 import SponsorSection from "../components/SponsorSection/sponsorSection";
+import { SponsorTiers } from "../components/constants";
+
 import logo_ccsd from "../images/logo_ccsd.png";
 import logo_comcast from "../images/logo_comcast.png";
 import logo_haas from "../images/logo_haas.png";
@@ -12,16 +14,15 @@ import logo_brothers from "../images/logo_brothers.svg";
 import logo_harbor_freight from "../images/logo_harbor_freight.svg";
 
 const styles = {
-  angelbots: {
-      background: 'red'
-  }
+  angelbots: { background: 'red' },
+  ccsf: { background: 'rgb(8, 97, 136)' },
 };
 
 const pinkSponsors = [
   {name:"Cherry Creek School District", logo:logo_ccsd},
   {name:"Comcast", logo:logo_comcast},
   {name:"Gene Haas Foundation", logo:logo_haas},
-  {name:"Cherry Creek Schools Foundation", logo:logo_ccsf},
+  {name:"Cherry Creek Schools Foundation", logo:logo_ccsf, style: styles.ccsf},
   {name:"Angelbotics", logo:logo_angelbotics, style: styles.angelbots},
   {name:"ACE Hardware", logo:logo_ace, description: "Buckley Square"},
   {name:"Fastenal", logo:logo_fastenal},
@@ -34,10 +35,10 @@ const silverSponsors = [
 
 const page = () => (
   <BasePage pageName="Current Sponsors">
-    <SponsorSection title="Pink" items={pinkSponsors} color="#FF007f" />
-    {/* <SponsorSection title="Gold" color="#ffd700"></SponsorSection> */}
-    <SponsorSection title="Silver" items={silverSponsors} color="#c0c0c0" />
-    {/* <SponsorSection title="Bronze" color="#cd7f32"></SponsorSection> */}
+    <SponsorSection title="Pink" items={pinkSponsors} color={SponsorTiers.Pink.color} />
+    {/* <SponsorSection title="Gold" color={SponsorTiers.Gold.color}></SponsorSection> */}
+    <SponsorSection title="Silver" items={silverSponsors} color={SponsorTiers.Silver.color} />
+    {/* <SponsorSection title="Bronze" color={SponsorTiers.Bronze.color}></SponsorSection> */}
   </BasePage>
 );
 
