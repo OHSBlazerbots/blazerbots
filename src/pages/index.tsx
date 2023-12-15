@@ -18,7 +18,7 @@ const carouselStyle = {
 
 const captionStyle = {
   background: "rgba(0,0,0,0.5)",
-  color: "#FF007F",
+  color: "white",
 };
 
 const carouselCards = [
