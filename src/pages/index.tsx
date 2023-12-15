@@ -48,6 +48,11 @@ const makeCarouselItem = (
   </Carousel.Item>
 );
 
+const mainContainerStyle = {
+  width: "80%",
+  margin: "auto",
+}
+
 const AboutUsCard = (
   <Card>
     <Card.Body>
@@ -80,14 +85,16 @@ const WhatIsFIRSTCard = (
 );
 
 const page = () => (
-  <BasePage>
+  <BasePage articleWidth="100%">
     <Carousel style={carouselStyle}>
       {carouselCards.map(makeCarouselItem)}
     </Carousel>
-    <Row xs={1} md={2} className="g-4">
-      <Col>{AboutUsCard}</Col>
-      <Col>{WhatIsFIRSTCard}</Col>
-    </Row>
+    <div style={mainContainerStyle}>
+      <Row xs={1} md={2} className="g-4">
+        <Col>{AboutUsCard}</Col>
+        <Col>{WhatIsFIRSTCard}</Col>
+      </Row>
+    </div>
   </BasePage>
 );
 

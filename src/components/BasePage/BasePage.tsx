@@ -9,12 +9,16 @@ import {
 
 interface BasePageProps extends PropsWithChildren {
   pageName?: string;
+  articleWidth?: string;
 }
 
-const BasePage = ({ pageName, children }: BasePageProps) => (
+const BasePage = ({ pageName, articleWidth, children }: BasePageProps) => (
   <div className={stylePageContainer}>
     <NavBar />
-    <article className={stylePageArticle}>
+    <article
+      className={stylePageArticle}
+      style={articleWidth ? { width: articleWidth } : {}}
+    >
       {/* Include header elements only if there is a non-empty pageName */}
       {pageName ? (
         <header className={styleHeader}>
