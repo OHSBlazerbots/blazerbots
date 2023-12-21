@@ -1,5 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
+import { SponsorProps } from "../../state/sponsors/types";
+
 import {
   logo as logoStyle,
   logoContainer as logoContainerStyle,
@@ -7,12 +9,6 @@ import {
   cardBody as cardBodyStyle,
 } from "./sponsor.module.css"
 
-interface SponsorProps {
-  name: string;
-  logo: string;
-  description?: string;
-  style?: React.CSSProperties;
-}
 
 const SponsorCard = ({name, logo, description, style}: SponsorProps) => (
   <>
@@ -29,4 +25,4 @@ const SponsorCard = ({name, logo, description, style}: SponsorProps) => (
   </>
 );
 
-export {SponsorCard, SponsorProps};
+export { SponsorCard };
