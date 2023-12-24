@@ -22,6 +22,12 @@
         "terminal.integrated.defaultProfile.linux": "zsh",
         "[jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
         }
       }
     }
