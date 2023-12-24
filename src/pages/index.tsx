@@ -95,7 +95,7 @@ const SponsorsBlock = () => {
       <Link to="/how-to-be-sponsors" >Interested in becoming a sponsor?</Link>
       <br />
       <br />
-      <Row xs={1} sm={2} md={2} lg={4} className="g-4 content-center">
+      <Row xs={1} sm={2} md={2} lg={4} className="g-4 justify-content-center">
       {allSponsors.map((item, idx) => (
             <Col key={idx}>
               <SponsorCard {...{sponsor: item, showBody: false, logoAspectRatio: "2/1"}} />
