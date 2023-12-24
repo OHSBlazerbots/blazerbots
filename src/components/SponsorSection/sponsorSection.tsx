@@ -1,8 +1,8 @@
 import React from "react";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { SponsorCard } from "../../components/Sponsor/sponsor";
-import { SponsorTier } from "../../state/sponsors/types";
+import { SponsorCard } from "../../components/SponsorCard/sponsorCard";
+import type { SponsorTier } from "../../state/sponsors/types";
 
   const SponsorSection = ({ title, color, items }: SponsorTier) => (
     <>
