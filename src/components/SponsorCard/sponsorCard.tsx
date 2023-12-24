@@ -3,20 +3,26 @@ import Card from "react-bootstrap/Card";
 import type { SponsorProps } from "../../state/sponsors/types";
 
 import {
-  logo as logoDefaultStyle,
+  logo as logoStyle,
   logoContainer as logoContainerStyle,
   card as cardStyle,
   cardBody as cardBodyStyle,
 } from "./sponsorCard.module.css";
 
-const SponsorCard = (
-  { name, logo, description, style }: SponsorProps,
-  showBody: boolean = true,
-  logoAspectRatio?: string
-) => {
-  const logoStyle = logoAspectRatio
-    ? { ...logoDefaultStyle, aspectRatio: logoAspectRatio }
-    : logoDefaultStyle;
+interface SponsorCardProps {
+  sponsor: SponsorProps;
+  showBody?: boolean;
+  logoAspectRatio?: string;
+}
+
+const SponsorCard = ({
+  sponsor: { name, logo, description, style },
+  showBody = true,
+  logoAspectRatio,
+}: SponsorCardProps) => {
+  const logoStyleOverrides = logoAspectRatio
+    ? { ...style, aspectRatio: logoAspectRatio }
+    : style;
 
   return (
     <>
@@ -25,7 +31,7 @@ const SponsorCard = (
           <Card.Img
             variant="top"
             src={logo}
-            style={style}
+            style={logoStyleOverrides}
             className={logoStyle}
           />
         </div>

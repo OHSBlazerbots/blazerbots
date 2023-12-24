@@ -12,7 +12,7 @@ import type { SponsorTier } from "../../state/sponsors/types";
       <Row xs={1} md={3} className="g-4 justify-content-center">
         {items.map((val, idx) => (
           <Col key={idx}>
-            <SponsorCard {...val}/>
+            <SponsorCard {...{sponsor: val}}/>
           </Col>
         ))}
       </Row>

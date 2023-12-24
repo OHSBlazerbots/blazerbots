@@ -98,7 +98,7 @@ const SponsorsBlock = () => {
       <Row xs={1} sm={2} md={2} lg={4} className="g-4 content-center">
       {allSponsors.map((item, idx) => (
             <Col key={idx}>
-              <SponsorCard {...item} />
+              <SponsorCard {...{sponsor: item, showBody: false, logoAspectRatio: "2/1"}} />
             </Col>
           ))}
       </Row>
