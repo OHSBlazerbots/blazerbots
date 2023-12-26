@@ -1,8 +1,9 @@
 import * as React from "react";
-import type { HeadFC } from "gatsby";
+import { Link, type HeadFC } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import BasePage from "../components/BasePage/BasePage";
+import { SponsorCard } from "../components/SponsorCard/sponsorCard";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
@@ -11,6 +12,7 @@ import Row from "react-bootstrap/Row";
 import pic1 from "../images/23photos/23regionalTeam.jpg";
 import pic2 from "../images/23photos/23regionalRobot.jpg";
 import pic3 from "../images/23photos/23regionalCheer.jpg";
+import { sponsorsData } from "../state/sponsors/data";
 
 const carouselStyle = {
   marginBottom: "24px",
@@ -18,7 +20,7 @@ const carouselStyle = {
 
 const captionStyle = {
   background: "rgba(0,0,0,0.5)",
-  color: "#FF007F",
+  color: "white",
 };
 
 const carouselCards = [
@@ -47,6 +49,11 @@ const makeCarouselItem = (
     />
   </Carousel.Item>
 );
+
+const mainContainerStyle = {
+  width: "80%",
+  margin: "auto",
+}
 
 const AboutUsCard = (
   <Card>
@@ -79,15 +86,39 @@ const WhatIsFIRSTCard = (
   </Card>
 );
 
+
+const SponsorsBlock = () => {
+  const allSponsors = sponsorsData.tiers.map(t => t.items).flat()
+  return (
+    <>
+      <h2>Thank you to our sponsors!</h2>
+      <Link to="/how-to-be-sponsors" >Interested in becoming a sponsor?</Link>
+      <br />
+      <br />
+      <Row xs={1} sm={2} md={2} lg={4} className="g-4 justify-content-center">
+      {allSponsors.map((item, idx) => (
+            <Col key={idx}>
+              <SponsorCard {...{sponsor: item, showBody: false, logoAspectRatio: "2/1"}} />
+            </Col>
+          ))}
+      </Row>
+    </>
+  )
+}
+
 const page = () => (
-  <BasePage pageName="">
+  <BasePage articleWidth="100%">
     <Carousel style={carouselStyle}>
       {carouselCards.map(makeCarouselItem)}
     </Carousel>
-    <Row xs={1} md={2} className="g-4">
-      <Col>{AboutUsCard}</Col>
-      <Col>{WhatIsFIRSTCard}</Col>
-    </Row>
+    <div style={mainContainerStyle}>
+      <Row xs={1} md={2} className="g-4">
+        <Col>{AboutUsCard}</Col>
+        <Col>{WhatIsFIRSTCard}</Col>
+      </Row>
+      <br />
+      <SponsorsBlock />
+    </div>
   </BasePage>
 );
 

@@ -8,16 +8,25 @@ import {
 } from "./BasePage.module.css";
 
 interface BasePageProps extends PropsWithChildren {
-  pageName: string;
+  pageName?: string;
+  articleWidth?: string;
 }
 
-const BasePage = ({ pageName, children }: BasePageProps) => (
+const BasePage = ({ pageName, articleWidth, children }: BasePageProps) => (
   <div className={stylePageContainer}>
     <NavBar />
-    <article className={stylePageArticle}>
-      <header className={styleHeader}>
-        <h1>{pageName}</h1>
-      </header>
+    <article
+      className={stylePageArticle}
+      style={articleWidth ? { width: articleWidth } : {}}
+    >
+      {/* Include header elements only if there is a non-empty pageName */}
+      {pageName ? (
+        <header className={styleHeader}>
+          <h1>{pageName}</h1>
+        </header>
+      ) : (
+        <></>
+      )}
       <div>{children}</div>
     </article>
     <Footer />
