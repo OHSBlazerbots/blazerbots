@@ -12,8 +12,8 @@ const carouselItemStyle = {
   width: "100%"
 }
 
-const makeCarouselItem = (image: string) => (
-  <Carousel.Item>
+const makeCarouselItem = (image: string, index: number) => (
+  <Carousel.Item key={index}>
     <img src={image} style={carouselItemStyle} />
   </Carousel.Item>
 );
