@@ -16,6 +16,10 @@ const config: GatsbyConfig = {
       options: {
         name: "Overland BlazerBots FRC Team 3807",
         short_name: "BlazerBots",
+        start_url: "/",
+        background_color: "#ff007f",
+        theme_color: "#ff007f",
+        display: "standalone",
         icon: "src/images/logo.svg", // This path is relative to the root of the site.
       },
     },
