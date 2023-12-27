@@ -1,5 +1,8 @@
 import React from "react";
+import { HeadFC } from "gatsby";
+
 import BasePage from "../components/BasePage/BasePage";
+import { SEO } from "../components/SEO/seo";
 
 import Carousel from "react-bootstrap/Carousel";
 
@@ -20,8 +23,10 @@ const makeCarouselItem = (image: string, index: number) => (
 
 const images2023 = [robot_2023_0, robot_2023_1, robot_2023_2, robot_2023_3];
 
+const title = "History"
+
 const page = () => (
-  <BasePage pageName="History">
+  <BasePage pageName={title}>
     Welcome to the history page!
     <h2>2023 - Charged Up! ⚡</h2>
     <Carousel>{images2023.map(makeCarouselItem)}</Carousel>
@@ -29,3 +34,5 @@ const page = () => (
 );
 
 export default page;
+
+export const Head: HeadFC = () => <SEO subTitle={title} />;

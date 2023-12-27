@@ -2,6 +2,7 @@ import * as React from "react";
 import type { HeadFC } from "gatsby";
 
 import BasePage from "../components/BasePage/BasePage";
+import { SEO } from "../components/SEO/seo";
 import { SponsorTiers } from "../components/constants";
 
 const title = "Become a Sponsor"
@@ -51,4 +52,4 @@ const page = () => (
 
 export default page;
 
-export const Head: HeadFC = () => <title>{title}</title>;
+export const Head: HeadFC = () => <SEO subTitle={title} />;

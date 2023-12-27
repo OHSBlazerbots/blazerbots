@@ -20,11 +20,11 @@ const useSiteMetadata = () => {
 };
 
 interface SEOProps extends PropsWithChildren {
-  title?: string;
+  subTitle?: string;
   description?: string;
 }
 
-const SEO = ({ title, description, children }: SEOProps) => {
+const SEO = ({ subTitle, description, children }: SEOProps) => {
   // Query default values
   const {
     title: defaultTitle,
@@ -33,7 +33,7 @@ const SEO = ({ title, description, children }: SEOProps) => {
 
   // Object to represent page SEO attributes (use defaults if not provided)
   const seo = {
-    title: title || defaultTitle,
+    title: subTitle ? `${subTitle} | ${defaultTitle}`: defaultTitle,
     description: description || defaultDescription,
   };
 
