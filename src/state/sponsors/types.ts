@@ -6,6 +6,7 @@ import { SponsorTiers } from "../../components/constants";
 interface SponsorProps {
   name: string;
   logo: string;
+  webpage?: string;
   description?: string;
   style?: React.CSSProperties;
 }

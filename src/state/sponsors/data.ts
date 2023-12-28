@@ -1,4 +1,4 @@
-import { makeTier, SponsorsState } from "./types";
+import { makeTier, type SponsorsState, type SponsorProps } from "./types";
 
 import logo_ccsd from "../../images/logo_ccsd.png";
 import logo_comcast from "../../images/logo_comcast.png";
@@ -19,19 +19,19 @@ const styles = {
   ccsf: { background: "rgb(8, 97, 136)" },
 };
 
-const pinkSponsors = [
-  { name: "Cherry Creek School District", logo: logo_ccsd },
-  { name: "Comcast", logo: logo_comcast },
-  { name: "Gene Haas Foundation", logo: logo_haas },
-  { name: "Cherry Creek Schools Foundation", logo: logo_ccsf, style: styles.ccsf },
-  { name: "Angelbotics", logo: logo_angelbotics, style: styles.angelbots },
-  { name: "ACE Hardware", logo: logo_ace, description: "Buckley Square" },
-  { name: "Fastenal", logo: logo_fastenal },
-  { name: "Brothers", logo: logo_brothers },
+const pinkSponsors: SponsorProps[] = [
+  { name: "Cherry Creek School District", logo: logo_ccsd, webpage: "https://www.cherrycreekschools.org/" },
+  { name: "Comcast", logo: logo_comcast, webpage: "https://corporate.comcast.com/" },
+  { name: "Gene Haas Foundation", logo: logo_haas, webpage: "https://ghaasfoundation.org" },
+  { name: "Cherry Creek Schools Foundation", logo: logo_ccsf, style: styles.ccsf, webpage: "https://ccsdfoundation.org/" },
+  { name: "Angelbotics", logo: logo_angelbotics, style: styles.angelbots, webpage: "https://angelbotics.org/" },
+  { name: "ACE Hardware", logo: logo_ace, description: "Buckley Square", webpage: "https://www.acehardware.com/store-details/17489" },
+  { name: "Fastenal", logo: logo_fastenal, webpage: "https://www.fastenal.com" },
+  { name: "Brothers Plumbing, Heating & Electric", logo: logo_brothers, webpage: "https://www.brothersplumbing.com/brothers-gives-back/brothers-gives-back-november-2023-overland-high-school/" },
 ];
 
-const silverSponsors = [
-  { name: "Harbor Freight Tools", logo: logo_harbor_freight },
+const silverSponsors: SponsorProps[] = [
+  { name: "Harbor Freight Tools", logo: logo_harbor_freight, webpage: "https://harborfreightgivingback.com/" },
 ];
 
 const sponsorsData: SponsorsState = {
