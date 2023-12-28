@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import BasePage from "../components/BasePage/BasePage";
 import { SponsorCard } from "../components/SponsorCard/sponsorCard";
+import { SEO } from "../components/SEO/seo";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
@@ -124,4 +125,4 @@ const page = () => (
 
 export default page;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <SEO />;
