@@ -16,7 +16,7 @@ interface SponsorCardProps {
 }
 
 const SponsorCard = ({
-  sponsor: { name, logo, description, style },
+  sponsor: { name, logo, description, webpage, style },
   showBody = true,
   logoAspectRatio,
 }: SponsorCardProps) => {
@@ -27,14 +27,14 @@ const SponsorCard = ({
   return (
     <>
       <Card className={cardStyle}>
-        <div className={logoContainerStyle}>
+      <a href={webpage ? webpage : "#"} className={logoContainerStyle}>
           <Card.Img
             variant="top"
             src={logo}
             style={logoStyleOverrides}
             className={logoStyle}
           />
-        </div>
+        </a>
 
         {showBody ? (
           <Card.Body className={cardBodyStyle}>
