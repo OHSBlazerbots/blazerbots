@@ -10,9 +10,9 @@ import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-import pic1 from "../images/23photos/23regionalTeam.jpg";
-import pic2 from "../images/23photos/23regionalRobot.jpg";
-import pic3 from "../images/23photos/23regionalCheer.jpg";
+import pic1 from "../images/2023photos/23regionalTeam.jpg";
+import pic2 from "../images/2023photos/23regionalRobot.jpg";
+import pic3 from "../images/2023photos/23regionalCheer.jpg";
 import { sponsorsData } from "../state/sponsors/data";
 
 const carouselStyle = {
