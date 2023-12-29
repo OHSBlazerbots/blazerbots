@@ -1,8 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
 import { navBackground, linkDefault, linkActive, linkNavBrand, dropDefault } from './navBar.module.css';
@@ -62,4 +59,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export { NavBar };

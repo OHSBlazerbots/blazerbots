@@ -1,10 +1,8 @@
 import React from "react";
 import { HeadFC } from "gatsby";
 
-import BasePage from "../components/BasePage/BasePage";
-import { SEO } from "../components/SEO/seo";
-
-import Carousel from "react-bootstrap/Carousel";
+import { Carousel } from "react-bootstrap";
+import { BasePage, SEO } from "../components";
 
 import robot_2023_0 from "../images/23photos/23regionalShowRobot0.jpg";
 import robot_2023_1 from "../images/23photos/23regionalShowRobot1.jpg";

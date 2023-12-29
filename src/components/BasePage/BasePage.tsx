@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import NavBar from "../NavBar/navBar";
-import Footer from "../Footer/footer";
+import { NavBar, Footer } from "..";
 import {
   pageContainer as stylePageContainer,
   pageArticle as stylePageArticle,
@@ -33,4 +32,4 @@ const BasePage = ({ pageName, articleWidth, children }: BasePageProps) => (
   </div>
 );
 
-export default BasePage;
+export { BasePage };

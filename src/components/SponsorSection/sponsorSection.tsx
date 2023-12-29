@@ -1,7 +1,6 @@
 import React from "react";
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import { SponsorCard } from "../../components/SponsorCard/sponsorCard";
+import { Col, Row } from 'react-bootstrap';
+import { SponsorCard } from "..";
 import type { SponsorTier } from "../../state/sponsors/types";
 
   const SponsorSection = ({ title, color, items }: SponsorTier) => (
@@ -20,4 +19,4 @@ import type { SponsorTier } from "../../state/sponsors/types";
     </>
   );
 
-export default SponsorSection;
+export { SponsorSection };

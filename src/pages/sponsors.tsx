@@ -1,9 +1,7 @@
 import React from "react";
 import { HeadFC } from "gatsby";
 
-import BasePage from "../components/BasePage/BasePage";
-import { SEO } from "../components/SEO/seo";
-import SponsorSection from "../components/SponsorSection/sponsorSection";
+import { BasePage, SEO, SponsorSection } from "../components";
 import { sponsorsData } from "../state/sponsors/data";
 
 const title = "Current Sponsors"
