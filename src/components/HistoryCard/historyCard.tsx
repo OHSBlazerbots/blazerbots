@@ -3,6 +3,7 @@ import { Card, Carousel } from "react-bootstrap";
 
 import {
   card as cardStyle,
+  TBAIcon as TBAIconStyle,
 } from "./historyCard.module.css";
 import icon_tba from "../../images/icon_tba.png";
 
@@ -24,18 +25,12 @@ const makeCarouselItem = (image: string, index: number) => (
   </Carousel.Item>
 );
 
-const tba_icon_style = {
-  width: "25px",
-  borderRadius: "50%",
-  marginBottom: "3px",
-};
-
 const TBALink = ({ year }: { year: string }) => {
   const address = "https://www.thebluealliance.com/team/3807/" + year;
 
   return (
     <Card.Link href={address} target="_blank">
-      <img src={icon_tba} style={tba_icon_style} />
+      <img src={icon_tba} className={TBAIconStyle} />
     </Card.Link>
   );
 };
