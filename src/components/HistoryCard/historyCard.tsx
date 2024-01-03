@@ -32,6 +32,16 @@ const tba_icon_style = {
   marginBottom: "3px",
 };
 
+const TBALink = ({ year }: { year: string }) => {
+  const address = "https://www.thebluealliance.com/team/3807/" + year;
+
+  return (
+    <Card.Link href={address} target="_blank">
+      <img src={icon_tba} style={tba_icon_style} />
+    </Card.Link>
+  );
+};
+
 const HistoryCard = ({
   year,
   name,
@@ -39,22 +49,23 @@ const HistoryCard = ({
   images,
   showTBA = true,
 }: HistoryCardProps) => {
-
   return (
     <>
       <Card className={cardStyle}>
-        <Card.Title>{year}: {name}</Card.Title>
-        {showTBA ?
-          <Card.Link href={"https://www.thebluealliance.com/team/3807/" + year} target="_blank"><img src={icon_tba} style={tba_icon_style} /></Card.Link>
-          :
-          <></>
-        }
+        <Card.Title>
+          {year}: {name}
+          {showTBA && (
+            <>
+              {" "}
+              <TBALink year={year} />
+            </>
+          )}
+        </Card.Title>
+
         <Card.Text>{blurb}</Card.Text>
-        {images.length > 0 ?
+        {images.length > 0 && (
           <Carousel>{images.map(makeCarouselItem)}</Carousel>
-          :
-          <></>
-        }
+        )}
       </Card>
     </>
   );
