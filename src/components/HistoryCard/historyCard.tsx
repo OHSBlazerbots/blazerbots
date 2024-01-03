@@ -1,12 +1,10 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card, Carousel } from "react-bootstrap";
 
 import {
   card as cardStyle,
 } from "./historyCard.module.css";
-import { Carousel } from "react-bootstrap";
-
-import icon_tba from "../../images/icon_tba.png"
+import icon_tba from "../../images/icon_tba.png";
 
 interface HistoryCardProps {
   year: string;
