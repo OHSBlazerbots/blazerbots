@@ -2,7 +2,7 @@ import React from "react";
 import { HeadFC } from "gatsby";
 
 import BasePage from "../components/BasePage/BasePage";
-import { HistoryCard } from "../components/HistoryCard/historyCard";
+import { HistoryCard, type HistoryCardProps } from "../components/HistoryCard/historyCard";
 import { SEO } from "../components/SEO/seo";
 
 // import robot_2023_0 from "../images/2023photos/23regionalShowRobot0.jpg";
@@ -41,7 +41,7 @@ import robot_2011_0 from "../images/2011photos/2011shop0.jpg";
 
 const title = "History";
 
-const data = [
+const data: HistoryCardProps[] = [
   {
     year: "2023",
     name: "Charged Up",
@@ -54,14 +54,14 @@ const data = [
     name: "Rapid React",
     blurb:
       "In 2022, the BlazerBots disbanded as a result of COVID, a majority of the team graduating, and declining student interest.",
-    showImages: false,
+    images: [],
     showTBA: false,
   },
   {
     year: "2021",
     name: "Infinite Recharge (2021)",
     blurb: "The team struggled to engage with the at-home version of the Infinite Recharge game but continued to improve the 2020 robot.",
-    showImages: false,
+    images: [],
   },
   {
     year: "2020",
@@ -98,14 +98,12 @@ const data = [
     name: "Recycle Rush",
     blurb: "In 2015, we built a tote-focused robot. We competed at the Colorado Regional and finished ranked 41st out of 51 teams.",
     images: [], // Could not find any images on team's google account
-    showImages: false,
   },
   {
     year: "2014",
     name: "Aerial Assist",
     blurb: "In 2014, we built a catapult based robot that had trouble hitting its mark. We competed at the Colorado Regional and finished with a record of 2-9, ranked 51st out of 52 teams.",
     images: [], // Could not find any images on team's google account
-    showImages: false,
   },
   {
     year: "2013",
@@ -133,7 +131,7 @@ const page = () => (
 We currently have approximately 12 returning students from a variety of backgrounds, as well as numerous mentors, many of whom are FRC alums.  {/* From Sponsorship Packet */}
 
     {data.map((value) => (
-      <HistoryCard {...value}></HistoryCard>
+      <HistoryCard {...value} key={value.year}></HistoryCard>
     ))}
   </BasePage>
 );

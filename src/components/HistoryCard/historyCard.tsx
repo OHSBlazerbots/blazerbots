@@ -9,12 +9,11 @@ import { Carousel } from "react-bootstrap";
 import icon_tba from "../../images/icon_tba.png"
 
 interface HistoryCardProps {
-  year: String,
-  name: String,
-  showTBA?: boolean,
-  showImages?: boolean,
-  blurb: String,
-  images?: any
+  year: string;
+  name: string;
+  blurb: string;
+  images: string[];
+  showTBA?: boolean;
 }
 
 const carouselItemStyle = {
@@ -28,18 +27,17 @@ const makeCarouselItem = (image: string, index: number) => (
 );
 
 const tba_icon_style = {
-  'width': '25px',
-  'border-radius': '50%',
-  'margin-bottom': '3px'
+  width: "25px",
+  borderRadius: "50%",
+  marginBottom: "3px",
 };
 
 const HistoryCard = ({
   year,
   name,
-  showTBA = true,
-  showImages = true,
   blurb,
-  images = []
+  images,
+  showTBA = true,
 }: HistoryCardProps) => {
 
   return (
@@ -52,7 +50,7 @@ const HistoryCard = ({
           <></>
         }
         <Card.Text>{blurb}</Card.Text>
-        {showImages ?
+        {images.length > 0 ?
           <Carousel>{images.map(makeCarouselItem)}</Carousel>
           :
           <></>
@@ -62,4 +60,4 @@ const HistoryCard = ({
   );
 };
 
-export { HistoryCard };
+export { HistoryCard, type HistoryCardProps };
