@@ -1,15 +1,17 @@
-.card {
-    height: 100%;
-    padding-bottom: 5px;
-    margin: 5px;
-}
-
-.cardBody {
-    flex: 0 1 auto;
+.title {
+    flex: 0.9;
+    margin: 0.5em 0;
+    font-weight: 500;
 }
 
 .TBAIcon {
     width: 25px;
     border-radius: 50%;
-    margin-bottom: 3px;
+}
+
+.iconContainer {
+    flex: 0.2;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
 }

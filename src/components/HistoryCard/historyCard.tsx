@@ -1,9 +1,10 @@
 import React from "react";
-import { Card, Carousel } from "react-bootstrap";
+import { Accordion, Carousel } from "react-bootstrap";
 
 import {
-  card as cardStyle,
+  title as titleStyle,
   TBAIcon as TBAIconStyle,
+  iconContainer as iconContainerStyle,
 } from "./historyCard.module.css";
 import icon_tba from "../../images/icon_tba.png";
 
@@ -29,9 +30,11 @@ const TBALink = ({ year }: { year: string }) => {
   const address = "https://www.thebluealliance.com/team/3807/" + year;
 
   return (
-    <Card.Link href={address} target="_blank">
-      <img src={icon_tba} className={TBAIconStyle} />
-    </Card.Link>
+    <div className={iconContainerStyle}>
+      <a href={address} target="_blank">
+        <img src={icon_tba} className={TBAIconStyle} />
+      </a>
+    </div>
   );
 };
 
@@ -43,24 +46,20 @@ const HistoryCard = ({
   showTBA = true,
 }: HistoryCardProps) => {
   return (
-    <>
-      <Card className={cardStyle}>
-        <Card.Title>
+    <Accordion.Item eventKey={year}>
+      <Accordion.Header>
+        <p className={titleStyle}>
           {year}: {name}
-          {showTBA && (
-            <>
-              {" "}
-              <TBALink year={year} />
-            </>
-          )}
-        </Card.Title>
-
-        <Card.Text>{blurb}</Card.Text>
+        </p>
+        {showTBA && <TBALink year={year} />}
+      </Accordion.Header>
+      <Accordion.Body>
+        <p>{blurb}</p>
         {images.length > 0 && (
           <Carousel>{images.map(makeCarouselItem)}</Carousel>
         )}
-      </Card>
-    </>
+      </Accordion.Body>
+    </Accordion.Item>
   );
 };
 

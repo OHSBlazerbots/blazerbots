@@ -1,4 +1,5 @@
 import React from "react";
+import { Accordion } from "react-bootstrap";
 import { HeadFC } from "gatsby";
 
 import BasePage from "../components/BasePage/BasePage";
@@ -130,9 +131,11 @@ const page = () => (
     The BlazerBots, based at Overland High School in Aurora, Colorado, started competing at the Colorado Regional in 2011. We have had mixed success over the past 12 years. Our highlights include winning the Colorado Regional in 2012 and captaining an alliance in 2013. The team struggled after COVID and skipped the 2022 season, before being revived with entirely new students for the 2023 season. In our first season after revival, and as a “rookie-in-all-but-number” team, we placed 25th at the Colorado Regional.
 We currently have approximately 12 returning students from a variety of backgrounds, as well as numerous mentors, many of whom are FRC alums.  {/* From Sponsorship Packet */}
 
-    {data.map((value) => (
-      <HistoryCard {...value} key={value.year}></HistoryCard>
-    ))}
+    <Accordion alwaysOpen>
+      {data.map((value) => (
+        <HistoryCard {...value} key={value.year}></HistoryCard>
+      ))}
+    </Accordion>
   </BasePage>
 );
 
