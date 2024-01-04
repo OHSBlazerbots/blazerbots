@@ -5,6 +5,7 @@ import {
   title as titleStyle,
   TBAIcon as TBAIconStyle,
   iconContainer as iconContainerStyle,
+  carouselItem as carouselItemStyle,
 } from "./historyCard.module.css";
 import icon_tba from "../../images/icon_tba.png";
 
@@ -16,13 +17,9 @@ interface HistoryCardProps {
   showTBA?: boolean;
 }
 
-const carouselItemStyle = {
-  width: "30%",
-};
-
 const makeCarouselItem = (image: string, index: number) => (
   <Carousel.Item key={index}>
-    <img src={image} style={carouselItemStyle} />
+    <img src={image} className={carouselItemStyle} />
   </Carousel.Item>
 );
 

@@ -15,3 +15,23 @@
     justify-content: end;
     margin-right: 5%;
 }
+
+.carouselItem {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    background-color: black;
+}
+
+/* For larger displays, restrict the carousel size based on avaliable width */
+@media (min-width: 1000px) {
+    .carouselItem {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carouselItem {
+        width: 60%;
+    }
+}

@@ -6,7 +6,7 @@ import BasePage from "../components/BasePage/BasePage";
 import { HistoryCard, type HistoryCardProps } from "../components/HistoryCard/historyCard";
 import { SEO } from "../components/SEO/seo";
 
-// import robot_2023_0 from "../images/2023photos/23regionalShowRobot0.jpg";
+import robot_2023_0 from "../images/2023photos/23regionalShowRobot0.jpg";
 import robot_2023_1 from "../images/2023photos/23regionalShowRobot1.jpg";
 import robot_2023_2 from "../images/2023photos/23regionalShowRobot2.jpg";
 import robot_2023_3 from "../images/2023photos/23regionalShowRobot3.jpg";
@@ -48,7 +48,7 @@ const data: HistoryCardProps[] = [
     name: "Charged Up",
     blurb:
       "The team re-formed with a group of students who had never participated in FRC before. In the 2022 off-season, the team modified the 2020 robot to compete in the Kendrick Castillo Memorial Tournament, winning the event as a member of the #1 alliance. During the 2023 season, the team competed at the Colorado Regional, finishing 6-6-0 and placing 25th out of 43 teams. At the 2023 Kendrick Castillo Memorial Tournament, the BlazerBots finished 37th out of 41 teams.",
-    images: [/*robot_2023_0,*/ robot_2023_1, robot_2023_2, robot_2023_3], // Omitting image 0 for now since it's vertical and the rest or horizontal. Not sure how to handle that correctly.
+    images: [robot_2023_0, robot_2023_1, robot_2023_2, robot_2023_3],
   },
   {
     year: "2022",
