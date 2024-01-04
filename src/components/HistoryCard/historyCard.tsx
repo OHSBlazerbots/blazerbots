@@ -53,7 +53,7 @@ const HistoryCard = ({
       <Accordion.Body>
         <p>{blurb}</p>
         {images.length > 0 && (
-          <Carousel>{images.map(makeCarouselItem)}</Carousel>
+          <Carousel variant="dark">{images.map(makeCarouselItem)}</Carousel>
         )}
       </Accordion.Body>
     </Accordion.Item>
