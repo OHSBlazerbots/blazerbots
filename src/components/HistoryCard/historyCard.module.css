@@ -1,0 +1,37 @@
+.title {
+    flex: 0.9;
+    margin: 0.5em 0;
+    font-weight: 500;
+}
+
+.TBAIcon {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.iconContainer {
+    flex: 0.2;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.carouselItem {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    background-color: black;
+}
+
+/* For larger displays, restrict the carousel size based on avaliable width */
+@media (min-width: 1000px) {
+    .carouselItem {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carouselItem {
+        width: 60%;
+    }
+}
