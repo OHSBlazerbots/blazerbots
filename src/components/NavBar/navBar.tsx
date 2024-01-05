@@ -3,11 +3,10 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import blackLogo from "../../images/logo192_black.png";
 import { Link } from "gatsby";
 import { navBackground, linkDefault, linkActive, linkNavBrand, dropDefault } from './navBar.module.css';
+import { stopClickPropagation } from "../../utils/events";
 
 // Not using a CSS module because we want to globally modify class names from Bootstrap
 import "./navBar-static.css";
-
-const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
 const DropdownItem = NavDropdown.Item; // alias so less typing
 const DropdownItemProps = {

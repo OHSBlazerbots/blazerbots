@@ -1,13 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { footer } from './footer.module.css';
+import { stopClickPropagation } from "../../utils/events";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail"
 import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram"
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillAlert } from "@react-icons/all-files/ai/AiFillAlert";
 import type { IconType } from "@react-icons/all-files";
-
-const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
 
 const LinkedContactInfo = (displayIcon: IconType, displayText: string, link: string) => (
     <span>
