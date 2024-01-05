@@ -1,13 +1,12 @@
 import React from "react";
 import { Accordion, Carousel } from "react-bootstrap";
 
+import { TheBlueAllianceIcon } from "../Icon";
 import {
   title as titleStyle,
-  TBAIcon as TBAIconStyle,
   iconContainer as iconContainerStyle,
   carouselItem as carouselItemStyle,
 } from "./historyCard.module.css";
-import icon_tba from "../../images/icon_tba.png";
 
 interface HistoryCardProps {
   year: string;
@@ -23,17 +22,11 @@ const makeCarouselItem = (image: string, index: number) => (
   </Carousel.Item>
 );
 
-const TBALink = ({ year }: { year: string }) => {
-  const address = "https://www.thebluealliance.com/team/3807/" + year;
-
-  return (
-    <div className={iconContainerStyle}>
-      <a href={address} target="_blank">
-        <img src={icon_tba} className={TBAIconStyle} />
-      </a>
-    </div>
-  );
-};
+const TBALink = ({ year }: { year: string }) => (
+  <div className={iconContainerStyle}>
+    <TheBlueAllianceIcon year={year} />
+  </div>
+);
 
 const HistoryCard = ({
   year,

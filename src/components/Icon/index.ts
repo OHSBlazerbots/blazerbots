@@ -1,0 +1,1 @@
+export { TheBlueAllianceIcon } from "./iconTheBlueAlliance";

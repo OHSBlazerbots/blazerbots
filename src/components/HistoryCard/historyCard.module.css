@@ -4,11 +4,6 @@
     font-weight: 500;
 }
 
-.TBAIcon {
-    width: 25px;
-    border-radius: 50%;
-}
-
 .iconContainer {
     flex: 0.2;
     display: flex;
