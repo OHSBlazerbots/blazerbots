@@ -18,24 +18,20 @@ const LinkedContactInfo = (displayIcon: TDisplayIcon, link: string, displayText?
 )
 
 const EmailInfo = LinkedContactInfo(() => AiOutlineMail({size: "16"}), "mailto:ohsblazerbots@gmail.com", "ohsblazerbots@gmail.com")
-const InstagramInfo = LinkedContactInfo(() => AiFillInstagram({size: "16"}), "https://instagram.com/ohsblazerbots", "Instagram")
-const GitHubInfo = LinkedContactInfo(() => AiFillGithub({size: "16"}), "https://github.com/OHSBlazerbots", "GitHub")
-const TBAInfo = LinkedContactInfo(() => <TheBlueAllianceIcon style={{width: "16px"}}/>, "https://www.thebluealliance.com/team/3807", "TheBlueAlliance")
+const InstagramInfo = LinkedContactInfo(() => AiFillInstagram({size: "48"}), "https://instagram.com/ohsblazerbots")
+const GitHubInfo = LinkedContactInfo(() => AiFillGithub({size: "48"}), "https://github.com/OHSBlazerbots")
+const TBAInfo = LinkedContactInfo(() => <TheBlueAllianceIcon style={{width: "48px"}}/>, "https://www.thebluealliance.com/team/3807")
 
 function Footer() {
   return ( 
     <footer className={footer}>
         <Container>
-            <Row>
-                <Col>
                     <div>Contact Us!</div>
                     <div>{EmailInfo}</div>
-                </Col>
-                <Col>
-                    <div>Follow Us On Social Media!</div>
-                    <div>{InstagramInfo} | {GitHubInfo} | {TBAInfo}</div>
-                </Col>
-            </Row>
+            <hr/>
+                    <div>{InstagramInfo} {GitHubInfo} {TBAInfo}</div>
+            <hr/>
+            FRC Team 3807 | Overland BlazerBots
         </Container>
     </footer>
   );
