@@ -6,18 +6,15 @@ import { TheBlueAllianceIcon } from "../Icon";
 import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram"
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 
-type TDisplayElement = () => JSX.Element;
-const LinkedContactInfo = (displayElement: TDisplayElement, link: string) => (
-    <span>
-        <a href={link} className="text-white" onClick={stopClickPropagation} >
-            {displayElement()}
-        </a>
-    </span>
-)
+const FooterLink = (link: string, displayElement: JSX.Element) => (
+    <a href={link} className="text-white" onClick={stopClickPropagation} >
+        {displayElement}
+    </a>
+);
 
-const EmailInfo = LinkedContactInfo(() => <>ohsblazerbots@gmail.com</>, "mailto:ohsblazerbots@gmail.com")
-const InstagramInfo = LinkedContactInfo(() => AiFillInstagram({size: "32"}), "https://instagram.com/ohsblazerbots")
-const GitHubInfo = LinkedContactInfo(() => AiFillGithub({size: "32"}), "https://github.com/OHSBlazerbots")
+const EmailInfo = FooterLink("mailto:ohsblazerbots@gmail.com", <>ohsblazerbots@gmail.com</>)
+const InstagramInfo = FooterLink("https://instagram.com/ohsblazerbots", <AiFillInstagram size="32" />)
+const GitHubInfo = FooterLink("https://github.com/OHSBlazerbots", <AiFillGithub size="32" />)
 const TBAInfo = <TheBlueAllianceIcon style={{width: "32px"}}/>
 
 function Footer() {
