@@ -18,7 +18,7 @@ const LinkedContactInfo = (displayElement: TDisplayElement, link: string) => (
 const EmailInfo = LinkedContactInfo(() => <>ohsblazerbots@gmail.com</>, "mailto:ohsblazerbots@gmail.com")
 const InstagramInfo = LinkedContactInfo(() => AiFillInstagram({size: "32"}), "https://instagram.com/ohsblazerbots")
 const GitHubInfo = LinkedContactInfo(() => AiFillGithub({size: "32"}), "https://github.com/OHSBlazerbots")
-const TBAInfo = LinkedContactInfo(() => <TheBlueAllianceIcon style={{width: "32px"}}/>, "https://www.thebluealliance.com/team/3807")
+const TBAInfo = <TheBlueAllianceIcon style={{width: "32px"}}/>
 
 function Footer() {
   return ( 
