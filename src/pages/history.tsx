@@ -2,9 +2,7 @@ import React from "react";
 import { Accordion } from "react-bootstrap";
 import { HeadFC } from "gatsby";
 
-import BasePage from "../components/BasePage/BasePage";
-import { HistoryCard, type HistoryCardProps } from "../components/HistoryCard/historyCard";
-import { SEO } from "../components/SEO/seo";
+import { BasePage, SEO, HistoryCard, type HistoryCardProps } from "../components";
 
 import robot_2023_0 from "../images/2023photos/23regionalShowRobot0.jpg";
 import robot_2023_1 from "../images/2023photos/23regionalShowRobot1.jpg";

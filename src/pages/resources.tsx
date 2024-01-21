@@ -1,8 +1,7 @@
 import React from "react";
 import { HeadFC } from "gatsby";
 
-import BasePage from "../components/BasePage/BasePage";
-import { SEO } from "../components/SEO/seo";
+import { BasePage, SEO } from "../components";
 
 const title = "Resources";
 

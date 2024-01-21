@@ -5,8 +5,14 @@
     padding-bottom: 10px;
     margin-top: 24px;
     color: white;
-  }
+    text-align: center;
+}
 
-  .linkActive {
-    color:  black;
-  }
+.column {
+  margin-bottom: 0.5em;
+}
+
+.footer hr {
+  margin: 0;
+  margin-bottom: 0.5em;
+}

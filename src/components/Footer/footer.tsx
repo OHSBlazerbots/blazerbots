@@ -1,55 +1,35 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { footer, linkActive } from './footer.module.css';
-import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail"
+import { footer, column as columnStyle } from './footer.module.css';
+import { stopClickPropagation } from "../../utils/events";
+import { TheBlueAllianceIcon } from "../Icon";
 import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram"
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 
-const stopClickPropagation:React.MouseEventHandler = event => event.stopPropagation();
+const FooterLink = (link: string, displayElement: JSX.Element) => (
+    <a href={link} className="text-white" onClick={stopClickPropagation} >
+        {displayElement}
+    </a>
+);
+
+const EmailInfo = FooterLink("mailto:ohsblazerbots@gmail.com", <>ohsblazerbots@gmail.com</>)
+const InstagramInfo = FooterLink("https://instagram.com/ohsblazerbots", <AiFillInstagram size="32" />)
+const GitHubInfo = FooterLink("https://github.com/OHSBlazerbots", <AiFillGithub size="32" />)
+const TBAInfo = <TheBlueAllianceIcon style={{width: "32px"}}/>
 
 function Footer() {
   return ( 
     <footer className={footer}>
         <Container>
-            <Row>
-                <Col>
-                    Contact Us!
-                </Col>
-                <Col>
-                    {/* This is for the center of the footer, row 1 */}
-                </Col>
-                <Col>
-                    Follow Us On Social Media!
-                </Col>
+            <Row xs={1} sm={2}>
+                <Col className={columnStyle}>Contact Us! {EmailInfo}</Col>
+                <Col className={columnStyle}>Follow Us: {InstagramInfo} {GitHubInfo} {TBAInfo}</Col>
             </Row>
-            <Row>
-                <Col>
-                    <AiOutlineMail />
-                    <span> </span>
-                    <a href="mailto:ohsblazerbots@gmail.com" className="text-white" onClick={stopClickPropagation} >ohsblazerbots@gmail.com</a>
-                </Col>
-                <Col>
-                    {/* This is for the center of the footer, row 2 */}
-                </Col>
-                <Col>
-                    <AiFillInstagram /> 
-                    <span> </span>
-                    <a href="https://instagram.com/ohsblazerbots" className="text-white" onClick={stopClickPropagation} >Instagram</a>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    {/* This is for the left of the footer, row 3 */}
-                </Col>
-                <Col>
-                    {/* This is for the center of the footer, row 3 */}
-                </Col>
-                <Col>
-                    {/* This is for the right of the footer, row 3 */}
-                </Col>
-            </Row>
+            <hr/>
+            FRC Team 3807 | Overland BlazerBots
         </Container>
     </footer>
   );
 }
 
-export default Footer;
+export { Footer };

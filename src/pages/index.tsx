@@ -2,13 +2,8 @@ import * as React from "react";
 import { Link, type HeadFC } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import BasePage from "../components/BasePage/BasePage";
-import { SponsorCard } from "../components/SponsorCard/sponsorCard";
-import { SEO } from "../components/SEO/seo";
-import Card from "react-bootstrap/Card";
-import Carousel from "react-bootstrap/Carousel";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { Card, Carousel, Col, Row } from "react-bootstrap";
+import { BasePage, SponsorCard, SEO } from "../components";
 
 import pic1 from "../images/2023photos/23regionalTeam.jpg";
 import pic2 from "../images/2023photos/23regionalRobot.jpg";

@@ -1,8 +1,7 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 
-import BasePage from "../components/BasePage/BasePage";
-import { SEO } from "../components/SEO/seo";
+import { BasePage, SEO } from "../components";
 import { SponsorTiers } from "../components/constants";
 
 const title = "Become a Sponsor"
