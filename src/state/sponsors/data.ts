@@ -9,6 +9,9 @@ import logo_ace from "../../images/logo_ace.png";
 import logo_fastenal from "../../images/logo_fastenal.png";
 import logo_brothers from "../../images/logo_brothers.svg";
 import logo_harbor_freight from "../../images/logo_harbor_freight.svg";
+import logo_kokoro from "../../images/logo_kokoro.jpg";
+import logo_medtronic from "../../images/logo_medtronic.png";
+import logo_revolve_reclaimed from "../../images/logo_revolve_reclaimed.jpg";
 
 
 //
@@ -23,6 +26,7 @@ const pinkSponsors: SponsorProps[] = [
   { name: "Cherry Creek School District", logo: logo_ccsd, webpage: "https://www.cherrycreekschools.org/" },
   { name: "Comcast", logo: logo_comcast, webpage: "https://corporate.comcast.com/" },
   { name: "Gene Haas Foundation", logo: logo_haas, webpage: "https://ghaasfoundation.org" },
+  { name: "Medtronic", logo: logo_medtronic, webpage: "https://www.medtronic.com" },
   { name: "Cherry Creek Schools Foundation", logo: logo_ccsf, style: styles.ccsf, webpage: "https://ccsdfoundation.org/" },
   { name: "Angelbotics", logo: logo_angelbotics, style: styles.angelbots, webpage: "https://angelbotics.org/" },
   { name: "ACE Hardware", logo: logo_ace, description: "Buckley Square", webpage: "https://www.acehardware.com/store-details/17489" },
@@ -31,7 +35,9 @@ const pinkSponsors: SponsorProps[] = [
 ];
 
 const silverSponsors: SponsorProps[] = [
+  { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/" },
   { name: "Harbor Freight Tools", logo: logo_harbor_freight, webpage: "https://harborfreightgivingback.com/" },
+  { name: "Revolve Reclaimed", logo: logo_revolve_reclaimed, webpage: "https://www.revolvereclaimed.com/"},
 ];
 
 const sponsorsData: SponsorsState = {
