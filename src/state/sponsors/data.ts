@@ -12,6 +12,8 @@ import logo_harbor_freight from "../../images/logo_harbor_freight.svg";
 import logo_kokoro from "../../images/logo_kokoro.jpg";
 import logo_medtronic from "../../images/logo_medtronic.png";
 import logo_revolve_reclaimed from "../../images/logo_revolve_reclaimed.jpg";
+import logo_abacus from "../../images/logo_abacus.png";
+import logo_sierrafp from "../../images/logo_sierrafp.svg";
 
 
 //
@@ -32,12 +34,14 @@ const pinkSponsors: SponsorProps[] = [
   { name: "ACE Hardware", logo: logo_ace, description: "Buckley Square", webpage: "https://www.acehardware.com/store-details/17489" },
   { name: "Fastenal", logo: logo_fastenal, webpage: "https://www.fastenal.com" },
   { name: "Brothers Plumbing, Heating & Electric", logo: logo_brothers, webpage: "https://www.brothersplumbing.com/brothers-gives-back/brothers-gives-back-november-2023-overland-high-school/" },
+  { name: "Abacus Cabinetry", logo: logo_abacus, webpage: "https://www.abacuscabinetry.com"},
 ];
 
 const silverSponsors: SponsorProps[] = [
   { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/" },
   { name: "Harbor Freight Tools", logo: logo_harbor_freight, webpage: "https://harborfreightgivingback.com/" },
   { name: "Revolve Reclaimed", logo: logo_revolve_reclaimed, webpage: "https://www.revolvereclaimed.com/"},
+  { name: "Sierra Forest Products", logo: logo_sierrafp, webpage: "https://www.sierrafp.com/"},
 ];
 
 const sponsorsData: SponsorsState = {
