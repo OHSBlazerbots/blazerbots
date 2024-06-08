@@ -7,6 +7,7 @@
     "bootstrap": "^5.2.3",
     "gatsby": "^5.13.6",
     "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-remark-check-links": "^2.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0"

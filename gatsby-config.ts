@@ -23,6 +23,15 @@ const config: GatsbyConfig = {
         icon: "src/images/logo.svg", // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-autolink-headers',
+          'gatsby-remark-check-links'
+        ]
+      }
+    },
   ],
 };
 
