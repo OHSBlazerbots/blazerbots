@@ -88,7 +88,7 @@ const SponsorsBlock = () => {
   return (
     <>
       <h2>Thank you to our sponsors!</h2>
-      <Link to="/how-to-be-sponsors" >Interested in becoming a sponsor?</Link>
+      <Link to="/sponsor-us" >Interested in becoming a sponsor?</Link>
       <br />
       <br />
       <Row xs={1} sm={2} md={2} lg={4} className="g-4 justify-content-center">
