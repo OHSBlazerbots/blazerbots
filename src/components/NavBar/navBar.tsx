@@ -41,7 +41,7 @@ function NavBar() {
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
             <NavDropdown title="Sponsors">
               <DropdownItem {...DropdownItemProps} to="/sponsors">Current Sponsors</DropdownItem>
-              <DropdownItem {...DropdownItemProps} to="/how-to-be-sponsors">Become a Sponsor</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/sponsor-us">Become a Sponsor</DropdownItem>
             </NavDropdown>
             <NavDropdown title="The Team">
               <DropdownItem {...DropdownItemProps} to="/about-us">Meet the team</DropdownItem>
