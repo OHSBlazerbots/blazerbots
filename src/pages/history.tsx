@@ -42,6 +42,12 @@ const title = "History";
 
 const data: HistoryCardProps[] = [
   {
+    year: "2024",
+    name: "Crescendo",
+    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches, the team's first game pieces picked up off of the floor, and the team's first successful climb! The team faught hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. Come listen to (and watch) Note Fury at the Kendrick Castillo Memorial Tournament in October!",
+    images: [],
+  },
+  {
     year: "2023",
     name: "Charged Up",
     blurb:
