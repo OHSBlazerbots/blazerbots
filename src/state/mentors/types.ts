@@ -6,8 +6,7 @@ interface MentorProps {
   since: string;
   image?: string;
   role?: string;
-  description?: string;
-  style?: React.CSSProperties;
+  bio?: string;
 }
 
 interface MentorsState {

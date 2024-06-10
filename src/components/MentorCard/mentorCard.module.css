@@ -12,6 +12,10 @@
     border-radius: 50%;
 }
 
+.image:hover {
+    border:5px solid #FF007f;
+}
+
 .card {
     height: 100%;
     border-width: 0px;
