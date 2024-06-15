@@ -2,6 +2,8 @@
     flex: 1 1 auto;
     display: block;
     align-items: center;
+    border:5px dashed #ff007f;
+    border-radius: 50%;
 }
 
 .image {
@@ -12,15 +14,23 @@
     border-radius: 50%;
 }
 
-.image:hover {
+.imageContainer:hover {
     border:5px solid #FF007f;
 }
 
 .card {
-    height: 100%;
     border-width: 0px;
 }
 
 .cardBody {
-    flex: 0 1 auto;
+    max-height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    padding: 40px;
+    border-radius: 50%;
+    border:5px dashed #ff007f;
+}
+
+.cardBody:hover {
+    border:5px solid #FF007f;
 }

@@ -40,15 +40,9 @@ class MentorCard extends Component<any, any> {
               className={imageStyle}
             />
           </a>
-
-          <Card.Body className={cardBodyStyle}>
-            <Card.Title>{this.props.mentor.name}</Card.Title>
-            <Card.Text>{this.props.mentor.role}</Card.Text>
-          </Card.Body>
         </div>
 
         <div className={cardStyle} onClick={this.handleClick}>
-
           <Card.Body className={cardBodyStyle}>
             <Card.Title>{this.props.mentor.name}</Card.Title>
             <Card.Text>{this.props.mentor.role}</Card.Text>
