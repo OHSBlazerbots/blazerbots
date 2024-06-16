@@ -1,6 +1,5 @@
-import React, { Component, MouseEventHandler } from "react";
+import React, { Component, MouseEvent } from "react";
 import { Card } from "react-bootstrap";
-import type { MentorProps } from "../../state/mentors/types";
 import ReactCardFlip from "react-card-flip";
 
 import {
@@ -9,11 +8,6 @@ import {
   card as cardStyle,
   cardBody as cardBodyStyle,
 } from "./mentorCard.module.css";
-
-interface mentorCardProps {
-  mentor: MentorProps;
-  showBody?: boolean;
-}
 
 class MentorCard extends Component<any, any> {
   constructor(props: any) {
@@ -24,9 +18,9 @@ class MentorCard extends Component<any, any> {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(event: MouseEventHandler<HTMLButtonElement>) {
+  handleClick(event: MouseEvent) {
     event.preventDefault();
-    this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
+    this.setState((prevState: any) => ({ isFlipped: !prevState.isFlipped }));
   }
 
   render() {

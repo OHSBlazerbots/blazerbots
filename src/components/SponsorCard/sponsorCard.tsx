@@ -27,7 +27,7 @@ const SponsorCard = ({
   return (
     <>
       <Card className={cardStyle}>
-      <a href={webpage ? webpage : "#"} className={logoContainerStyle}>
+        <a href={webpage ? webpage : "#"} className={logoContainerStyle}>
           <Card.Img
             variant="top"
             src={logo}

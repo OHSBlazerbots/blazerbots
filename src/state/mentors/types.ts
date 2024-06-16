@@ -15,7 +15,7 @@ interface MentorsState {
 
 const makeList = (props: MentorsState) => ({
   ...props,
-})
+});
 
-export { makeList }
-export type { MentorProps, MentorsState }
+export { makeList };
+export type { MentorProps, MentorsState };
