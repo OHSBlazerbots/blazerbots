@@ -44,7 +44,8 @@ function NavBar() {
               <DropdownItem {...DropdownItemProps} to="/sponsor-us">Become a Sponsor</DropdownItem>
             </NavDropdown>
             <NavDropdown title="The Team">
-              <DropdownItem {...DropdownItemProps} to="/about-us">Meet the team</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/our-team">Meet the team</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/our-mentors">Meet the mentors</DropdownItem>
               <DropdownItem {...DropdownItemProps} to="/history">Competitions</DropdownItem>
               <DropdownItem {...DropdownItemProps} to="/calendar">Calendar</DropdownItem>
               <NavDropdown.Divider />
