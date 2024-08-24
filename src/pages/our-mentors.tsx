@@ -25,7 +25,7 @@ const page = () => (
       on the next generation of engineers, scientists and leaders.
     </p>
 
-    <hr color="black" />
+    <hr />
     
     <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 justify-content-center">
       {mentorData.map((mentor, idx) => (
