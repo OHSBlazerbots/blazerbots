@@ -30,7 +30,7 @@ const MentorCard = ({ name, since, image, role, bio }: MentorProps) => {
           <Card.Title>{name}</Card.Title>
           <Card.Text>
             {role}
-            <br />
+            {role ? <br /> : <></>}
             Mentoring Since {since}
           </Card.Text>
           <Card.Text>{bio}</Card.Text>
