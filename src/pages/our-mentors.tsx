@@ -7,18 +7,6 @@ import { mentorData } from "../state/mentors/data";
 
 const title = "Our Mentors";
 
-const styles = {
-  card: {
-    border: "1px solid #eeeeee",
-    borderRadius: "3px",
-    padding: "15px",
-    width: "250px",
-  },
-  textCard: {
-    border: "none",
-  },
-};
-
 const page = () => (
   <BasePage pageName={title}>
     <p>
@@ -36,11 +24,13 @@ const page = () => (
       Below are our mentors who volunteer their time to leave a lasting impact
       on the next generation of engineers, scientists and leaders.
     </p>
+
     <hr color="black" />
+    
     <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 justify-content-center">
       {mentorData.map((mentor, idx) => (
         <Col key={idx}>
-          <MentorCard mentor={mentor} styles={styles} />
+          <MentorCard {...mentor}/>
         </Col>
       ))}
     </Row>

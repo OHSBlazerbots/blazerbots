@@ -1,6 +1,7 @@
-import React, { Component, MouseEvent } from "react";
+import React, { MouseEvent, useState } from "react";
 import { Card } from "react-bootstrap";
 import ReactCardFlip from "react-card-flip";
+import { MentorProps } from "../../state/mentors/types";
 
 import {
   image as imageStyle,
@@ -9,44 +10,32 @@ import {
   cardBody as cardBodyStyle,
 } from "./mentorCard.module.css";
 
-class MentorCard extends Component<any, any> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      isFlipped: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const MentorCard = ({ name, since, image, role, bio }: MentorProps) => {
+  const [isFlipped, setIsFlipped] = useState<boolean>(false);
 
-  handleClick(event: MouseEvent) {
+  function handleClick(event: MouseEvent) {
     event.preventDefault();
-    this.setState((prevState: any) => ({ isFlipped: !prevState.isFlipped }));
+    setIsFlipped((status) => !status);
   }
 
-  render() {
-    return (
-      <ReactCardFlip isFlipped={this.state.isFlipped}>
-        <div className={cardStyle} onClick={this.handleClick}>
-          <a className={imageContainerStyle}>
-            <Card.Img
-              variant="top"
-              src={this.props.mentor.image}
-              className={imageStyle}
-            />
-          </a>
-        </div>
+  return (
+    <ReactCardFlip isFlipped={isFlipped}>
+      <div className={cardStyle} onClick={handleClick}>
+        <a className={imageContainerStyle}>
+          <Card.Img variant="top" src={image} className={imageStyle} />
+        </a>
+      </div>
 
-        <div className={cardStyle} onClick={this.handleClick}>
-          <Card.Body className={cardBodyStyle}>
-            <Card.Title>{this.props.mentor.name}</Card.Title>
-            <Card.Text>{this.props.mentor.role}</Card.Text>
-            <Card.Text>Mentoring Since {this.props.mentor.since}</Card.Text>
-            <Card.Text>{this.props.mentor.bio}</Card.Text>
-          </Card.Body>
-        </div>
-      </ReactCardFlip>
-    );
-  }
-}
+      <div className={cardStyle} onClick={handleClick}>
+        <Card.Body className={cardBodyStyle}>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{role}</Card.Text>
+          <Card.Text>Mentoring Since {since}</Card.Text>
+          <Card.Text>{bio}</Card.Text>
+        </Card.Body>
+      </div>
+    </ReactCardFlip>
+  );
+};
 
 export { MentorCard };
