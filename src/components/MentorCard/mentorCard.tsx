@@ -5,8 +5,9 @@ import { MentorProps } from "../../state/mentors/types";
 
 import {
   image as imageStyle,
-  imageContainer as imageContainerStyle,
   card as cardStyle,
+  cardBack as cardBackStyle,
+  cardFront as cardFrontStyle,
   cardBody as cardBodyStyle,
 } from "./mentorCard.module.css";
 
@@ -20,17 +21,18 @@ const MentorCard = ({ name, since, image, role, bio }: MentorProps) => {
 
   return (
     <ReactCardFlip isFlipped={isFlipped}>
-      <div className={cardStyle} onClick={handleClick}>
-        <a className={imageContainerStyle}>
-          <Card.Img variant="top" src={image} className={imageStyle} />
-        </a>
+      <div className={`${cardStyle} ${cardFrontStyle}`} onClick={handleClick}>
+        <Card.Img variant="top" src={image} className={imageStyle} />
       </div>
 
-      <div className={cardStyle} onClick={handleClick}>
+      <div className={`${cardStyle} ${cardBackStyle}`} onClick={handleClick}>
         <Card.Body className={cardBodyStyle}>
           <Card.Title>{name}</Card.Title>
-          <Card.Text>{role}</Card.Text>
-          <Card.Text>Mentoring Since {since}</Card.Text>
+          <Card.Text>
+            {role}
+            <br />
+            Mentoring Since {since}
+          </Card.Text>
           <Card.Text>{bio}</Card.Text>
         </Card.Body>
       </div>

@@ -1,11 +1,3 @@
-.imageContainer {
-  flex: 1 1 auto;
-  display: block;
-  align-items: center;
-  border: 5px dashed #ff007f;
-  border-radius: 50%;
-}
-
 .image {
   max-height: 100%;
   object-fit: contain;
@@ -14,23 +6,26 @@
   border-radius: 50%;
 }
 
-.imageContainer:hover {
-  border: 5px solid #ff007f;
+.image:hover {
+  cursor: pointer;
 }
 
 .card {
-  border-width: 0px;
+  border: 5px dashed #ff007f;
+}
+
+.card:hover {
+  border-style: solid;
+}
+
+.cardFront {
+  border-radius: 50%;
+}
+.cardBack {
+  border-radius: 20px;
 }
 
 .cardBody {
   max-height: 100%;
-  object-fit: contain;
-  aspect-ratio: 1/1;
-  padding: 40px;
-  border-radius: 50%;
-  border: 5px dashed #ff007f;
-}
-
-.cardBody:hover {
-  border: 5px solid #ff007f;
+  padding: 15px;
 }
