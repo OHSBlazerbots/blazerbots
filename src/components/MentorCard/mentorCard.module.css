@@ -13,6 +13,8 @@
 
 .card {
   border: 5px dashed #ff007f;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .card:hover {
@@ -27,7 +29,6 @@
 }
 
 .cardBody {
-  max-height: 100%;
   padding: 15px;
   aspect-ratio: 1/1;
 }
