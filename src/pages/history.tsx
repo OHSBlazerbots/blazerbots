@@ -4,6 +4,12 @@ import { HeadFC } from "gatsby";
 
 import { BasePage, SEO, HistoryCard, type HistoryCardProps } from "../components";
 
+import robot_2024_0 from "../images/2024photos/2024regional0.gif";
+import robot_2024_1 from "../images/2024photos/2024regional1.jpg";
+import robot_2024_2 from "../images/2024photos/2024regional2.jpg";
+import robot_2024_3 from "../images/2024photos/2024regional3.jpg";
+import robot_2024_4 from "../images/2024photos/2024regional4.jpg";
+
 import robot_2023_0 from "../images/2023photos/23regionalShowRobot0.jpg";
 import robot_2023_1 from "../images/2023photos/23regionalShowRobot1.jpg";
 import robot_2023_2 from "../images/2023photos/23regionalShowRobot2.jpg";
@@ -41,6 +47,12 @@ import robot_2011_0 from "../images/2011photos/2011shop0.jpg";
 const title = "History";
 
 const data: HistoryCardProps[] = [
+  {
+    year: "2024",
+    name: "Crescendo",
+    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches at competition, the team's first game pieces picked up off of the floor, the team's first successful climb, and many more! The team faught hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. Come listen to (and watch) Note Fury at the Kendrick Castillo Memorial Tournament in October!",
+    images: [robot_2024_0, robot_2024_1, robot_2024_2, robot_2024_3, robot_2024_4],
+  },
   {
     year: "2023",
     name: "Charged Up",
@@ -129,14 +141,13 @@ const page = () => (
     <p>
       The BlazerBots, based at Overland High School in Aurora, Colorado, started
       competing at the Colorado Regional in 2011. We have had mixed success over
-      the past 12 years. Our highlights include winning the Colorado Regional in
+      the past 13 years. Our highlights include winning the Colorado Regional in
       2012 and captaining an alliance in 2013. The team struggled after COVID
       and skipped the 2022 season, before being revived with entirely new
       students for the 2023 season. In our first season after revival, and as a
       “rookie-in-all-but-number” team, we placed 25th at the Colorado Regional.
-      We currently have approximately 12 returning students from a variety of
+      We currently have approximately 20 returning students from a variety of
       backgrounds, as well as numerous mentors, many of whom are FRC alums.
-      {/* From Sponsorship Packet */}
     </p>
     <Accordion alwaysOpen>
       {data.map((value) => (
