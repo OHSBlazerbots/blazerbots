@@ -2,6 +2,7 @@ import { MentorProps } from "./types";
 
 import kate_mcdonnell from "../../images/mentors/kate_mcdonnell.jpg";
 import daniel_brandt from "../../images/mentors/daniel_brandt.jpg";
+import troy_farris from "../../images/mentors/troy_farris.jpg";
 import ron_depoty from "../../images/mentors/ron_depoty.jpg";
 import abraham_selenke from "../../images/mentors/abraham_selenke.jpg";
 import autumn_dekay from "../../images/mentors/autumn_dekay.jpg";
@@ -24,6 +25,13 @@ const mentorData: MentorProps[] = [
     image: daniel_brandt,
     role: "Team Coach",
     bio: "Mr. Brandt started mentoring in 2019 and teaches physics and robotics at Overland. As a mentor he focuses on helping students design the robot in CAD, as well as assisting with 3D printing and other manufacturing.",
+  },
+  {
+    name: "Troy Farris",
+    since: "2012",
+    image: troy_farris,
+    role: "Build",
+    bio: "Troy joined the BlazerBots in 2012 and mentored the build team through the 2020 season and is excited to be returning for the 2025 season! Troy brings a wealth of manufacturing experience to the shop!"
   },
   {
     name: "Ron DePoty",
@@ -65,7 +73,7 @@ const mentorData: MentorProps[] = [
     since: "2023",
     image: talya_goldman,
     role: "Electrical and CAD",
-    bio: "Talya joined in 2024, after participating as a student for three years (2014-2017). Talya studied Biomedical Enginnering in school and brings mechanical engineering and CAD skills to the team, and also helps mentor the electrical team.",
+    bio: "Talya joined in 2024, after participating as a student for three years (2014-2017). Talya studied Biomedical Engineering in school and brings mechanical engineering and CAD skills to the team, and also helps mentor the electrical team.",
   },
   {
     name: "Scott Miller",
