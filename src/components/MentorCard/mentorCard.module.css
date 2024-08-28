@@ -1,0 +1,34 @@
+.image {
+  max-height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #ff86c3;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.card {
+  border: 5px dashed #ff007f;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.card:hover {
+  border-style: solid;
+}
+
+.cardFront {
+  border-radius: 50%;
+}
+.cardBack {
+  border-radius: 20px;
+}
+
+.cardBody {
+  padding: 15px;
+  aspect-ratio: 1/1;
+}
