@@ -51,6 +51,7 @@ function NavBar() {
               <DropdownItem {...ExternalLinkProps} href="https://www.firstinspires.org/robotics/frc">FIRST</DropdownItem>
             </NavDropdown>
             <Link to="/resources" className={linkDefault} activeClassName={linkActive} >Resources</Link>
+            <Link to="https://overland-robotics.square.site/" className={linkDefault} >Store</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
