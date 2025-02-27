@@ -10,6 +10,7 @@ import logo_medtronic from "../../images/logo_medtronic.png";
 import logo_abacus from "../../images/logo_abacus.png";
 import logo_sierrafp from "../../images/logo_sierrafp.svg";
 import logo_ula from "../../images/logo_ula.png";
+import logo_onlinemetals from "../../images/logo_onlinemetals.png";
 
 
 //
@@ -39,6 +40,7 @@ const bronzeSponsors: SponsorProps[] = [
   { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/"},
   { name: "Sierra Forest Products", logo: logo_sierrafp, webpage: "https://www.sierrafp.com/"},
   { name: "United Launch Alliance", logo: logo_ula, webpage: "https://www.ulalaunch.com/"},
+  { name: "Online Metals", logo: logo_onlinemetals, webpage: "https://www.onlinemetals.com/"},
 ];
   
 const sponsorsData: SponsorsState = {
