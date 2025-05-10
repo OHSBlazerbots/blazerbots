@@ -39,19 +39,18 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="navbar" >
             <Link to="/about-us" className={linkDefault} activeClassName={linkActive} >About Us</Link>
-            <NavDropdown title="Sponsors">
+            <NavDropdown title="Sponsors"  className={linkDefault}>
               <DropdownItem {...DropdownItemProps} to="/sponsors">Current Sponsors</DropdownItem>
-              <DropdownItem {...DropdownItemProps} to="/sponsor-us">Become a Sponsor</DropdownItem>
+              <DropdownItem {...DropdownItemProps} to="/sponsor-us">Sponsor Us</DropdownItem>
             </NavDropdown>
-            <NavDropdown title="The Team">
-              <DropdownItem {...DropdownItemProps} to="/our-mentors">Meet the mentors</DropdownItem>
+            <NavDropdown title="The Team" className={linkDefault}>
+              <DropdownItem {...DropdownItemProps} to="/our-mentors">Mentors</DropdownItem>
               <DropdownItem {...DropdownItemProps} to="/history">Competitions</DropdownItem>
               <DropdownItem {...DropdownItemProps} to="/calendar">Calendar</DropdownItem>
               <NavDropdown.Divider />
               <DropdownItem {...ExternalLinkProps} href="https://www.firstinspires.org/robotics/frc">FIRST</DropdownItem>
             </NavDropdown>
-            <Link to="/resources" className={linkDefault} activeClassName={linkActive} >Resources</Link>
-            <Link to="https://overland-robotics.square.site/" className={linkDefault} >Store</Link>
+            <Link to="https://overland-robotics.square.site/" className={linkDefault} target="_blank" >Store</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

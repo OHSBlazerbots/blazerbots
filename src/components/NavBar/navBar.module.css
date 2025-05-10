@@ -4,11 +4,13 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-weight: bold;
 }
 
 .linkNavBrand {
   text-decoration: none;
   display: inline-block;
+  font-weight: bolder;
 }
 
 .linkDefault:hover {

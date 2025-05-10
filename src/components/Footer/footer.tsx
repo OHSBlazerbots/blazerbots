@@ -27,6 +27,8 @@ function Footer() {
             </Row>
             <hr/>
             FRC Team 3807 | Overland BlazerBots
+            <br />
+            BlazerBots is a 501(c)(3) non-profit organization. EIN: 93-4355234
         </Container>
     </footer>
   );

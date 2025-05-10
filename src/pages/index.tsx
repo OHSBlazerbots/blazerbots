@@ -70,11 +70,11 @@ const WhatIsFIRSTCard = (
       <Card.Title>What is FIRST?</Card.Title>
       <Card.Text>
         FIRST Robotics Competition (FRC), is an international competition that
-        challenges students to create a competitive 125 pound robot in
+        challenges students to create a competitive 115 pound robot in
         approximately 10 weeks every spring! Students learn critical STEM
         skills, collaboration, and most importantly, have the hardest fun
-        they’ll ever have! In the words of FIRST founder Dean Kamen,{" "}
-        <i>“We don’t use kids to build robots, we use robots to build kids.”</i>{" "}
+        they'll ever have! In the words of FIRST founder Dean Kamen,{" "}
+        <i>“We don't use kids to build robots, we use robots to build kids.”</i>{" "}
         In that vein, our mission is to leave a legacy with every step we take
         and every robot we make.
       </Card.Text>
@@ -88,7 +88,7 @@ const SponsorsBlock = () => {
   return (
     <>
       <h2>Thank you to our sponsors!</h2>
-      <Link to="/sponsor-us" >Interested in becoming a sponsor?</Link>
+      Don't see your logo here? <Link to="/sponsor-us" >Click here to learn how to add it!</Link>
       <br />
       <br />
       <Row xs={1} sm={2} md={2} lg={4} className="g-4 justify-content-center">
