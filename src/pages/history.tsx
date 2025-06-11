@@ -4,6 +4,12 @@ import { HeadFC } from "gatsby";
 
 import { BasePage, SEO, HistoryCard, type HistoryCardProps } from "../components";
 
+import robot_2025_0 from "../images/2025photos/2025regional0.jpg";
+import robot_2025_1 from "../images/2025photos/2025regional1.jpg";
+import robot_2025_2 from "../images/2025photos/2025regional2.jpg";
+import robot_2025_3 from "../images/2025photos/2025regional3.jpg";
+import robot_2025_4 from "../images/2025photos/2025regional4.jpg";
+
 import robot_2024_0 from "../images/2024photos/2024regional0.gif";
 import robot_2024_1 from "../images/2024photos/2024regional1.jpg";
 import robot_2024_2 from "../images/2024photos/2024regional2.jpg";
@@ -48,9 +54,16 @@ const title = "History";
 
 const data: HistoryCardProps[] = [
   {
+    year: "2025",
+    name: "Reefscape",
+    blurb: "The team constructed \"I Can't Swim\", a robot that was able to score coral at L3 and L4. \"I Can't Swim\" featured a single stage elevator with an arm that retrieved coral from the coral station and then pivoted 180 degrees to score. At the 2025 Colorado Regional the team faced a number of technical challenges, but managed to finish with a 4-4-1 record and a ranking of 30th out of 50 team. The BlazerBots will be diving once more at the 2025 Kendrick Castillo Memorial Tournament in October, come check us out!",
+    images: [robot_2025_0, robot_2025_1, robot_2025_2, robot_2025_3, robot_2025_4],
+    showTBA: true,
+  },
+  {
     year: "2024",
     name: "Crescendo",
-    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches at competition, the team's first game pieces picked up off of the floor, the team's first successful climb, and many more! The team faught hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. Come listen to (and watch) Note Fury at the Kendrick Castillo Memorial Tournament in October!",
+    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches at competition, the team's first game pieces picked up off of the floor, the team's first successful climb, and many more! The team faught hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. At the Kendrick Castillo Memorial Tournament, the BlazerBots finished 43rd out of 45 teams with a 2-8 record.",
     images: [robot_2024_0, robot_2024_1, robot_2024_2, robot_2024_3, robot_2024_4],
   },
   {
