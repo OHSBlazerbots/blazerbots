@@ -11,12 +11,12 @@ const page = () => (
   <BasePage pageName={title}>
     <p>
       Above all else, FRC strives to be a place for students to learn and grow.
-      We have long taken pride in the BlazerBots being a "student lead" team,
-      where the students get to deside on their priorities year to year, but
-      that doesn't mean there isn't a place for mentors. In FRC, high schooler
+      We have long taken pride in the BlazerBots being a "student-led" team,
+      where the students get to decide on their priorities year to year, but
+      that doesn't mean there isn't a place for mentors. In FRC, high schoolers
       and adults work side-by-side, learning from each other (and yes, the
       adults learn just as much from the students). Mentors are professionals
-      from variety of industries and give students the opportunity to learn from
+      from a variety of industries and give students the opportunity to learn from
       their years of experience, while still maintaining control over their
       destiny as a team.
     </p>

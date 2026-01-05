@@ -46,12 +46,12 @@ const WhoAreWeCard = (
           students learn critical STEM skills, collaboration, leadership, and
           most importantly, have the hardest fun they'll ever have!
           <br />
-          Every January, FIRST release a new game, played by teams around the world.
+          Every January, FIRST releases a new game, played by teams around the world.
           Games vary widely and have included tasks from shooting
-          foam basketballs to stacking totes and from launching foam rings to to placing PVC pipes on a structure.
+          foam basketballs to stacking totes and from launching foam rings to placing PVC pipes on a structure.
           <br />
           Students are challenged to strategize, design, build, and program a robot to play the game, all in about 10 weeks.
-          The must collaborate and closely communicate with each other to ensure that the robot is ready for competition in time.
+          They must collaborate and closely communicate with each other to ensure that the robot is ready for competition in time.
         </Col>
         <Col md={4}>
           <Card.Img src={team_picture} alt="TEST" />
@@ -116,7 +116,7 @@ const SkillsCard = (
     <Card.Body>
       <Card.Title>Imparting Critical Skills</Card.Title>
       <Card.Text>
-        <i>FIRST</i> and foremost, we provide students with skills to that
+        <i>FIRST</i> and foremost, we provide students with skills that
         prepare them for future careers in STEM and more. Through building the
         robot itself and through interactions with their teammates, members
         learn about:

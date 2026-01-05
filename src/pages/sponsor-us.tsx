@@ -37,7 +37,7 @@ const page = () => (
     <div style={style}>
       <p>Do you own, work for, or know a business that would like to support our program and receive advertisement opportunities in return?</p>
       <p>
-        We're always seeking funding and sponsors to support our budget, which was grown to nearly $20,000 per year.
+        We're always seeking funding and sponsors to support our budget, which has grown to nearly $20,000 per year.
         We offer four tiers of sponsorship: {makeSponsorTierText("Bronze")}, {makeSponsorTierText("Silver")}, {makeSponsorTierText("Gold")}, and {makeSponsorTierText("Pink")}. Each offers logo placement with increasing visibility, starting with our website for Bronze and culminating in a large logo on our competition robot.
         See our sponsorship packet below for details!
       </p>
