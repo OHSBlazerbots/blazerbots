@@ -63,7 +63,7 @@ const data: HistoryCardProps[] = [
   {
     year: "2024",
     name: "Crescendo",
-    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches at competition, the team's first game pieces picked up off of the floor, the team's first successful climb, and many more! The team faught hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. At the Kendrick Castillo Memorial Tournament, the BlazerBots finished 43rd out of 45 teams with a 2-8 record.",
+    blurb: "The team built \"Note Fury\", a robot that accomplished numerous BlazerBot firsts: the team's first swerve drive, the team's first full day of practice matches at competition, the team's first game pieces picked up off of the floor, the team's first successful climb, and many more! The team fought hard at the Colorado Regional, replacing every wheel at least once and rebuilding the bumpers between matches, before finishing 47th out of 49 teams. At the Kendrick Castillo Memorial Tournament, the BlazerBots finished 43rd out of 45 teams with a 2-8 record.",
     images: [robot_2024_0, robot_2024_1, robot_2024_2, robot_2024_3, robot_2024_4],
   },
   {
@@ -114,7 +114,7 @@ const data: HistoryCardProps[] = [
   {
     year: "2016",
     name: "FIRST Stronghold",
-    blurb: "In 2016, we built a robot focused on traversing the games defenses with a unique \"butterfly\" drive train. We competed at the Colorado Regional, although we missed the practice day due to a massive snowstorm, which also prevented us from attaching our manipulator arm. Despite those challenges, we finished with a record of 6-5-0, ranked 24th out of 48 teams.",
+    blurb: "In 2016, we built a robot focused on traversing the game's defenses with a unique \"butterfly\" drive train. We competed at the Colorado Regional, although we missed the practice day due to a massive snowstorm, which also prevented us from attaching our manipulator arm. Despite those challenges, we finished with a record of 6-5-0, ranked 24th out of 48 teams.",
     images: [robot_2016_0, robot_2016_1, robot_2016_2, robot_2016_3],
   },
   {
