@@ -45,9 +45,9 @@ const silverSponsors: SponsorProps[] = [
 ];
 
 const bronzeSponsors: SponsorProps[] = [
-  { name: "Fabworks", logo: logo_fabworks, webpage: "https://www.fabworks.com/"},
-  { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/"},
-  { name: "Online Metals", logo: logo_onlinemetals, webpage: "https://www.onlinemetals.com/"},
+  { name: "Fabworks", logo: logo_fabworks, webpage: "https://www.fabworks.com/" },
+  { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/" },
+  { name: "Online Metals", logo: logo_onlinemetals, webpage: "https://www.onlinemetals.com/" },
 ];
   
 const sponsorsData: SponsorsState = {
