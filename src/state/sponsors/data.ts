@@ -14,6 +14,7 @@ import logo_bae from "../../images/logo_bae.svg";
 import logo_yea from "../../images/logo_yea.png";
 import logo_te_connectivity from "../../images/logo_te_connectivity.svg";
 import logo_campos from "../../images/logo_campos.png";
+import logo_fabworks from "../../images/logo_fabworks.svg";
 
 //
 // Actual data for all of our sponsors
@@ -44,8 +45,9 @@ const silverSponsors: SponsorProps[] = [
 ];
 
 const bronzeSponsors: SponsorProps[] = [
-  { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/"},
-  { name: "Online Metals", logo: logo_onlinemetals, webpage: "https://www.onlinemetals.com/"},
+  { name: "Fabworks", logo: logo_fabworks, description: "Use code FRC3807 for 5% off and we'll get 5% back on our orders!", webpage: "https://www.fabworks.com/" },
+  { name: "Kokoro", logo: logo_kokoro, webpage: "https://www.kokororestaurants.com/" },
+  { name: "Online Metals", logo: logo_onlinemetals, webpage: "https://www.onlinemetals.com/" },
 ];
   
 const sponsorsData: SponsorsState = {
