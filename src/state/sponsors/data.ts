@@ -14,7 +14,7 @@ import logo_bae from "../../images/logo_bae.svg";
 import logo_yea from "../../images/logo_yea.png";
 import logo_te_connectivity from "../../images/logo_te_connectivity.svg";
 import logo_campos from "../../images/logo_campos.png";
-import logo_fabworks from "../../images/logo_fabworks.png";
+import logo_fabworks from "../../images/logo_fabworks.svg";
 
 //
 // Actual data for all of our sponsors
