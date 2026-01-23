@@ -15,6 +15,7 @@ import logo_yea from "../../images/logo_yea.png";
 import logo_te_connectivity from "../../images/logo_te_connectivity.svg";
 import logo_campos from "../../images/logo_campos.png";
 import logo_fabworks from "../../images/logo_fabworks.svg";
+import logo_saunders from "../../images/logo_saunders.png";
 
 //
 // Actual data for all of our sponsors
@@ -41,6 +42,7 @@ const goldSponsors: SponsorProps[] = [
 const silverSponsors: SponsorProps[] = [
   { name: "Campos EPC", logo: logo_campos, webpage: "https://www.camposepc.com/"},
   { name: "Fastenal", logo: logo_fastenal, webpage: "https://www.fastenal.com" },
+  { name: "Saunders", logo: logo_saunders, webpage: "https://www.saundersinc.com/" },
   { name: "United Launch Alliance", logo: logo_ula, webpage: "https://www.ulalaunch.com/"},
 ];
 
