@@ -4,6 +4,10 @@ import { HeadFC } from "gatsby";
 
 import { BasePage, SEO, HistoryCard, type HistoryCardProps } from "../components";
 
+import robot_2026_0 from "../images/2026photos/2026regional0.jpg";
+import robot_2026_1 from "../images/2026photos/2026regional1.jpg";
+import robot_2026_2 from "../images/2026photos/2026regional2.jpg";
+
 import robot_2025_0 from "../images/2025photos/2025regional0.jpg";
 import robot_2025_1 from "../images/2025photos/2025regional1.jpg";
 import robot_2025_2 from "../images/2025photos/2025regional2.jpg";
@@ -56,8 +60,8 @@ const data: HistoryCardProps[] = [
   {
     year: "2026",
     name: "Rebuilt",
-    blurb: "For the first time in team history, the BlazerBots are scheduled to compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed \"Aspiring Dumper\" to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8339. Going into the Denver Regional, the team redesigned \"Aspiring Dumper\" to fill the role of a defensive fuel-herding robot. We'll see you at DU!",
-    images: [],
+    blurb: "For the first time in team history, the BlazerBots are scheduled to compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed the robot to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8334. Going into the Denver Regional, the team redesigned their robot to fill the role of a defensive fuel-herding robot. We'll see you at DU!",
+    images: [robot_2026_0, robot_2026_1, robot_2026_2],
     showTBA: true,
   },
   {
