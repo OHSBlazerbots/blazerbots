@@ -60,14 +60,14 @@ const data: HistoryCardProps[] = [
   {
     year: "2026",
     name: "Rebuilt",
-    blurb: "For the first time in team history, the BlazerBots are scheduled to compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed the robot to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8334. Going into the Denver Regional, the team redesigned their robot to fill the role of a defensive fuel-herding robot. We'll see you at DU!",
+    blurb: "For the first time in team history, the BlazerBots will compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed the robot to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8334. Going into the Denver Regional, the team redesigned their robot to fill the role of a defensive fuel-herding robot. We'll see you at DU!",
     images: [robot_2026_0, robot_2026_1, robot_2026_2],
     showTBA: true,
   },
   {
     year: "2025",
     name: "Reefscape",
-    blurb: "The team constructed \"I Can't Swim\", a robot that was able to score coral at L3 and L4. \"I Can't Swim\" featured a single stage elevator with an arm that retrieved coral from the coral station and then pivoted 180 degrees to score. At the 2025 Colorado Regional the team faced a number of technical challenges, but managed to finish with a 4-4-1 record and a ranking of 30th out of 50 teams. The BlazerBots will be diving once more at the 2025 Kendrick Castillo Memorial Tournament in October, come check us out!",
+    blurb: "The team constructed \"I Can't Swim\", a robot that was able to score coral at L3 and L4. \"I Can't Swim\" featured a single stage elevator with an arm that retrieved coral from the coral station and then pivoted 180 degrees to score. At the 2025 Colorado Regional the team faced a number of technical challenges, but managed to finish with a 4-4-1 record and a ranking of 30th out of 50 teams.",
     images: [robot_2025_0, robot_2025_1, robot_2025_2, robot_2025_3, robot_2025_4],
     showTBA: true,
   },
