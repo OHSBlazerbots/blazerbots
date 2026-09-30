@@ -102,6 +102,8 @@ const SponsorsBlock = () => {
   )
 }
 
+import { DonationForm } from "../components/DonationForm/donation-form";
+
 const page = () => (
   <BasePage articleWidth="100%">
     <Carousel style={carouselStyle}>
@@ -113,6 +115,8 @@ const page = () => (
         <Col>{WhatIsFIRSTCard}</Col>
       </Row>
       <br />
+      <DonationForm />
+      <br />
       <SponsorsBlock />
     </div>
   </BasePage>
@@ -120,4 +124,11 @@ const page = () => (
 
 export default page;
 
-export const Head: HeadFC = () => <SEO />;
+export const Head: HeadFC = () => {
+  return (
+    <>
+      <SEO />
+      
+    </>
+  );
+}

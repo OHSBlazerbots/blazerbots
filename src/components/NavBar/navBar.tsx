@@ -50,6 +50,7 @@ function NavBar() {
               <NavDropdown.Divider />
               <DropdownItem {...ExternalLinkProps} href="https://www.firstinspires.org/robotics/frc">FIRST</DropdownItem>
             </NavDropdown>
+            <Link to="https://www.coloradogives.org/organization/Blazerbots" className={linkDefault} target="_blank" >Donate</Link>
             <Link to="https://overland-robotics.square.site/" className={linkDefault} target="_blank" >Store</Link>
           </Nav>
         </Navbar.Collapse>
