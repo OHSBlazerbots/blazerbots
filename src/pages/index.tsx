@@ -3,7 +3,7 @@ import { Link, type HeadFC } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Card, Carousel, Col, Row } from "react-bootstrap";
-import { BasePage, SponsorCard, SEO } from "../components";
+import { BasePage, SponsorCard, SEO, DonationForm } from "../components";
 
 import pic1 from "../images/2023photos/23regionalTeam.jpg";
 import pic2 from "../images/2023photos/23regionalRobot.jpg";
@@ -83,6 +83,16 @@ const WhatIsFIRSTCard = (
 );
 
 
+const DonationBlock = () => {
+  return (
+    <>
+      <h2>Support Us Via Colorado Gives!</h2>
+      <DonationForm/>
+    </>
+  )
+}
+
+
 const SponsorsBlock = () => {
   const allSponsors = sponsorsData.tiers.map(t => t.items).flat()
   return (
@@ -102,8 +112,6 @@ const SponsorsBlock = () => {
   )
 }
 
-import { DonationForm } from "../components/DonationForm/donation-form";
-
 const page = () => (
   <BasePage articleWidth="100%">
     <Carousel style={carouselStyle}>
@@ -115,7 +123,7 @@ const page = () => (
         <Col>{WhatIsFIRSTCard}</Col>
       </Row>
       <br />
-      <DonationForm />
+      <DonationBlock />
       <br />
       <SponsorsBlock />
     </div>
