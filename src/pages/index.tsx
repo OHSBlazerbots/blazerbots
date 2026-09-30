@@ -132,11 +132,4 @@ const page = () => (
 
 export default page;
 
-export const Head: HeadFC = () => {
-  return (
-    <>
-      <SEO />
-      
-    </>
-  );
-}
+export const Head: HeadFC = () => <SEO />;
