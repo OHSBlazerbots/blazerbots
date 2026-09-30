@@ -1,4 +1,5 @@
 export { BasePage } from "./BasePage/BasePage";
+export { DonationForm } from "./DonationForm/donationForm"
 export { Footer } from "./Footer/footer";
 export { HistoryCard, type HistoryCardProps } from "./HistoryCard/historyCard";
 export { MentorCard } from "./MentorCard/mentorCard";
