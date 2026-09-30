@@ -60,7 +60,7 @@ const data: HistoryCardProps[] = [
   {
     year: "2026",
     name: "Rebuilt",
-    blurb: "For the first time in team history, the BlazerBots will compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed the robot to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8334. Going into the Denver Regional, the team redesigned their robot to fill the role of a defensive fuel-herding robot. We'll see you at DU!",
+    blurb: "For the first time in team history, the BlazerBots will compete at two regional events: the Pikes Peak Regional in Colorado Springs and the Denver Regional in ... Denver! To compete at these events, the team designed and built \"Aspiring Dumper\". The team originally designed the robot to focus on scoring fuel via triple-fixed angle shooters and finished 25th out of 33 teams at Pikes Peak. Through a unique series of events, 3807 was called in as a backup robot for the 2nd seeded alliance and played one match in the playoffs and were named event finalists alongside teams 9068, 4499, and 8334. Going into the Denver Regional, the team redesigned their robot to fill the role of a defensive fuel-herding robot. At the Denver Regional, the team finished with a 3-6 record, ranked 50th out of 55 teams.",
     images: [robot_2026_0, robot_2026_1, robot_2026_2],
     showTBA: true,
   },
