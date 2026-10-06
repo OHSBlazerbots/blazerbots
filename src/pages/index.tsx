@@ -3,7 +3,7 @@ import { Link, type HeadFC } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Card, Carousel, Col, Row } from "react-bootstrap";
-import { BasePage, SponsorCard, SEO } from "../components";
+import { BasePage, SponsorCard, SEO, DonationForm } from "../components";
 
 import pic1 from "../images/2023photos/23regionalTeam.jpg";
 import pic2 from "../images/2023photos/23regionalRobot.jpg";
@@ -49,17 +49,54 @@ const makeCarouselItem = (
 const mainContainerStyle = {
   width: "80%",
   margin: "auto",
-}
+};
+
+const mainBannerStyle = {
+  background: "#282828",
+  color: "white",
+  padding: "52px 24px",
+  marginBottom: "32px",
+};
+
+const actionButtonStyle1 = {
+  borderRadius: "999px",
+  padding: "0.75rem 1.25rem",
+  fontWeight: 700,
+  textDecoration: "none",
+  border: "1px solid #FF007F",
+  color: "white",
+  background: "#FF007F",
+};
+
+const actionButtonStyle2 = {
+  borderRadius: "999px",
+  padding: "0.75rem 1.25rem",
+  fontWeight: 700,
+  textDecoration: "none",
+  border: "1px solid #FF007F",
+  color: "#FF007F",
+  background: "transparent",
+};
 
 const AboutUsCard = (
   <Card>
     <Card.Body>
       <Card.Title>About Us</Card.Title>
-      The BlazerBots, based at Overland High School in Aurora, Colorado are a
-      high school team that provides a diverse, inclusive and fun learning
-      environment for all of its members. The BlazerBots participate in FIRST
-      Robotics Competition (FRC), and started competing at the Colorado Regional
-      in 2011!
+      <p>
+        The BlazerBots, based at Overland High School in Aurora, Colorado are a
+        high school team that provides a diverse, inclusive and fun learning
+        environment for all of its members. The BlazerBots participate in FIRST
+        Robotics Competition (FRC), and started competing at the Colorado Regional
+        in 2011!
+      </p>
+
+      <Link
+        to="/about-us"
+        className="btn"
+        style={{ ...actionButtonStyle1 }}
+      >
+        Meet the Team
+      </Link>
     </Card.Body>
   </Card>
 );
@@ -74,13 +111,28 @@ const WhatIsFIRSTCard = (
         approximately 10 weeks every spring! Students learn critical STEM
         skills, collaboration, and most importantly, have the hardest fun
         they'll ever have! In the words of FIRST founder Dean Kamen,{" "}
-        <i>“We don't use kids to build robots, we use robots to build kids.”</i>{" "}
-        In that vein, our mission is to leave a legacy with every step we take
-        and every robot we make.
-      </Card.Text>
+        <i>“We don't use kids to build robots, we use robots to build kids.”</i>{" "}      </Card.Text>
+
+      <Link
+        to="https://www.firstinspires.org/"
+        className="btn"
+        style={{ ...actionButtonStyle1 }}
+      >
+        Learn More
+      </Link>
     </Card.Body>
   </Card>
 );
+
+
+const DonationBlock = () => {
+  return (
+    <Card>
+      <h2>Support Us Via Colorado Gives!</h2>
+      <DonationForm/>
+    </Card>
+  )
+}
 
 
 const SponsorsBlock = () => {
@@ -88,8 +140,6 @@ const SponsorsBlock = () => {
   return (
     <>
       <h2>Thank you to our sponsors!</h2>
-      Don't see your logo here? <Link to="/sponsor-us" >Click here to learn how to add it!</Link>
-      <br />
       <br />
       <Row xs={1} sm={2} md={2} lg={4} className="g-4 justify-content-center">
       {allSponsors.map((item, idx) => (
@@ -102,17 +152,138 @@ const SponsorsBlock = () => {
   )
 }
 
+const MissionCard = (
+  <Card>
+    <Card.Body>
+      <Card.Title>Mission</Card.Title>
+      <p>
+        Our mission is to leave a legacy with every step we take and every robot we make.
+      </p>
+    </Card.Body>
+  </Card>
+);
+
+const GetInvolvedCard = (
+  <Card>
+    <Card.Body>
+      <Card.Title>Get Involved</Card.Title>
+      <p>
+        Interested in joining the BlazerBots or supporting our team? There are many ways to get involved, from becoming a team member to volunteering or sponsoring our activities.
+      </p>
+      <Link
+        to="mailto:info@blazerbots.org"
+        className="btn"
+        style={{ ...actionButtonStyle1 }}
+      >
+        Contact Us
+      </Link>
+    </Card.Body>
+  </Card>
+);
+
+const MainBanner = (
+  <div style={mainBannerStyle}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <Row className="align-items-center g-4">
+          <Col lg={7}>
+            <p
+              style={{
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+              }}
+            >
+              Overland High School • Aurora, Colorado
+            </p>
+            <h1
+              style={{
+                fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                fontWeight: 800,
+                marginBottom: "1rem",
+              }}
+            >
+              Building robots. Building leaders.
+            </h1>
+            <p
+              style={{
+                fontSize: "1.1rem",
+                maxWidth: "680px",
+                lineHeight: 1.7,
+                opacity: 0.95,
+              }}
+            >
+              The BlazerBots are a student-driven FIRST Robotics Competition team committed
+              to creating a fun, inclusive, and empowering environment where members learn,
+              innovate, and compete at the highest level.
+            </p>
+            <div className="d-flex flex-wrap gap-3" style={{ marginTop: "1.5rem" }}>
+              <Link
+                to="/about-us"
+                className="btn"
+                style={{ ...actionButtonStyle1 }}
+              >
+                Learn More
+              </Link>
+              <Link
+                to="https://www.coloradogives.org/organization/Blazerbots"
+                target="_blank"
+                className="btn"
+                style={{
+                  ...actionButtonStyle2
+                }}
+              >
+                Donate
+              </Link>
+              <Link
+                to="/sponsor-us"
+                className="btn"
+                style={{
+                  ...actionButtonStyle2
+                }}
+              >
+                Sponsor Us
+              </Link>
+            </div>
+          </Col>
+          <Col lg={5}>
+            <div
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                borderRadius: "18px",
+                padding: "1rem",
+                border: "1px solid rgba(255,255,255,0.2)",
+              }}
+            >
+              <Carousel style={carouselStyle}>
+                {carouselCards.map(makeCarouselItem)}
+              </Carousel>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </div>
+);
+
 const page = () => (
   <BasePage articleWidth="100%">
-    <Carousel style={carouselStyle}>
-      {carouselCards.map(makeCarouselItem)}
-    </Carousel>
+    {MainBanner}
+
     <div style={mainContainerStyle}>
-      <Row xs={1} md={2} className="g-4">
-        <Col>{AboutUsCard}</Col>
-        <Col>{WhatIsFIRSTCard}</Col>
+      <Row xs={1} md={3} className="g-4">
+        <Col>
+          {AboutUsCard}
+          <br/>
+          {GetInvolvedCard}
+        </Col>
+        <Col>
+          {MissionCard}
+          <br/>
+          {WhatIsFIRSTCard}
+        </Col>
+        <Col>
+          <DonationBlock />
+        </Col>
       </Row>
-      <br />
+      <br/>
       <SponsorsBlock />
     </div>
   </BasePage>
